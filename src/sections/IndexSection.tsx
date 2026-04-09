@@ -1,17 +1,20 @@
 import { motion } from 'motion/react';
 import { Globe } from 'lucide-react';
+import { useOutletContext, useNavigate, useParams } from 'react-router-dom';
 import { TRANSLATIONS, Language } from '../translations';
+import type { LayoutContext } from '../layouts/RootLayout';
 
-type Section = 'INDEX' | 'TIMELINE' | 'CAPABILITIES' | 'WORK' | 'CONTACTS';
-
-interface IndexSectionProps {
-  onNavigate: (s: Section) => void;
-  language: Language;
-  onLanguageChange: (l: Language) => void;
-}
-
-export default function IndexSection({ onNavigate, language, onLanguageChange }: IndexSectionProps) {
+export default function IndexSection() {
+  const { language } = useOutletContext<LayoutContext>();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
   const t = TRANSLATIONS[language].index;
+
+  const handleLanguageChange = (newLang: Language) => {
+    const newLangSegment = newLang === 'IT' ? 'it' : 'en';
+    navigate(`/${newLangSegment}/`);
+  };
+
   return (
     <div className="flex-1 flex flex-col justify-center relative">
       <div className="relative z-10">
@@ -22,16 +25,16 @@ export default function IndexSection({ onNavigate, language, onLanguageChange }:
             <span className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">LOCALE</span>
           </div>
           <div className="flex gap-4">
-            {(['EN', 'IT'] as Language[]).map((lang) => (
+            {(['EN', 'IT'] as Language[]).map((l) => (
               <button
-                key={lang}
-                onClick={() => onLanguageChange(lang)}
+                key={l}
+                onClick={() => handleLanguageChange(l)}
                 className={`font-mono text-xs tracking-widest transition-all relative pb-1 ${
-                  language === lang ? 'text-ink font-bold' : 'text-slate-400 hover:text-ink'
+                  language === l ? 'text-ink font-bold' : 'text-slate-400 hover:text-ink'
                 }`}
               >
-                {lang === 'EN' ? 'ENGLISH' : 'ITALIANO'}
-                {language === lang && (
+                {l === 'EN' ? 'ENGLISH' : 'ITALIANO'}
+                {language === l && (
                   <motion.div
                     layoutId="lang-underline"
                     className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary"
@@ -57,12 +60,11 @@ export default function IndexSection({ onNavigate, language, onLanguageChange }:
 
           <div className="flex items-center gap-8">
             <button
-              onClick={() => onNavigate('WORK')}
+              onClick={() => navigate(`/${lang}/selected-works`)}
               className="bg-ink text-white px-8 py-4 font-mono text-sm tracking-widest hover:bg-primary transition-colors"
             >
               {t.cta}
             </button>
-
           </div>
         </div>
       </div>

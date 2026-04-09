@@ -1,11 +1,10 @@
+import { useOutletContext } from 'react-router-dom';
 import { EXPERIENCE } from '../types';
-import { TRANSLATIONS, Language } from '../translations';
+import { TRANSLATIONS } from '../translations';
+import type { LayoutContext } from '../layouts/RootLayout';
 
-interface TimelineSectionProps {
-  language: Language;
-}
-
-export default function TimelineSection({ language }: TimelineSectionProps) {
+export default function TimelineSection() {
+  const { language } = useOutletContext<LayoutContext>();
   const t = TRANSLATIONS[language].timeline;
   return (
     <div className="flex flex-col gap-24">

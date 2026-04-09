@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useOutletContext, useNavigate, useParams } from 'react-router-dom';
 import { PROJECTS } from '../types';
-import { TRANSLATIONS, Language } from '../translations';
+import { TRANSLATIONS } from '../translations';
+import type { LayoutContext } from '../layouts/RootLayout';
 
-interface WorkSectionProps {
-  onSelectProject: (id: string) => void;
-  language: Language;
-}
-
-export default function WorkSection({ onSelectProject, language }: WorkSectionProps) {
+export default function WorkSection() {
+  const { language } = useOutletContext<LayoutContext>();
+  const { lang } = useParams<{ lang: string }>();
+  const navigate = useNavigate();
   const [filter, setFilter] = useState('ALL');
   const t = TRANSLATIONS[language].work;
-  const filters = ['ALL', 'IDENTITY', 'DIGITAL', 'POP',  'PRINT'] as const;
+  const filters = ['ALL', 'IDENTITY', 'DIGITAL', 'POP', 'PRINT'] as const;
 
   const filteredProjects = PROJECTS.filter(project => {
     if (filter === 'ALL') return true;
@@ -60,7 +60,7 @@ export default function WorkSection({ onSelectProject, language }: WorkSectionPr
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
-              onClick={() => onSelectProject(project.id)}
+              onClick={() => navigate(`/${lang}/selected-works/${project.slug}`)}
               className="bg-background-light p-8 flex flex-col gap-6 group cursor-pointer"
             >
               <div className="flex justify-between font-mono text-[10px] text-slate-400 uppercase tracking-widest">

@@ -1,10 +1,9 @@
-import { TRANSLATIONS, Language } from '../translations';
+import { useOutletContext } from 'react-router-dom';
+import { TRANSLATIONS } from '../translations';
+import type { LayoutContext } from '../layouts/RootLayout';
 
-interface CapabilitiesSectionProps {
-  language: Language;
-}
-
-export default function CapabilitiesSection({ language }: CapabilitiesSectionProps) {
+export default function CapabilitiesSection() {
+  const { language } = useOutletContext<LayoutContext>();
   const t = TRANSLATIONS[language].capabilities;
   return (
     <div className="flex flex-col gap-24">

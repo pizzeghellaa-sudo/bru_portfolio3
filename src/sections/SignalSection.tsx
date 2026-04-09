@@ -1,13 +1,11 @@
+import { useOutletContext } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { TRANSLATIONS } from '../translations';
-import type { Language } from '../translations';
+import type { LayoutContext } from '../layouts/RootLayout';
 import bruPng from '../assets/bru.png';
 
-interface SignalSectionProps {
-  language: Language;
-}
-
-export default function SignalSection({ language }: SignalSectionProps) {
+export default function SignalSection() {
+  const { language } = useOutletContext<LayoutContext>();
   const t = TRANSLATIONS[language].signal;
   const links = [
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/bruna-bulgarelli-8a9b7819/', category: 'NETWORK' },

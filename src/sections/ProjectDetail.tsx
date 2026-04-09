@@ -1,19 +1,24 @@
+import { useOutletContext, useNavigate, useParams } from 'react-router-dom';
 import { PROJECTS, StorySection } from '../types';
-import { TRANSLATIONS, Language } from '../translations';
+import { TRANSLATIONS } from '../translations';
+import type { LayoutContext } from '../layouts/RootLayout';
 
-interface ProjectDetailProps {
-  projectId: string;
-  onBack: () => void;
-  onImageClick: (index: number) => void;
-  language: Language;
-}
+export default function ProjectDetail() {
+  const { language, onImageClick } = useOutletContext<LayoutContext>();
+  const { slug, lang } = useParams<{ slug: string; lang: string }>();
+  const navigate = useNavigate();
 
-export default function ProjectDetail({ projectId, onBack, onImageClick, language }: ProjectDetailProps) {
-  const project = PROJECTS.find(p => p.id === projectId);
+  const project = PROJECTS.find(p => p.slug === slug);
   const t = TRANSLATIONS[language].work;
+
   if (!project) return null;
 
   const meta = project.meta;
+
+  const handleImageClick = (index: number) => {
+    const images = project.gallery.map(img => img.full);
+    onImageClick(images, index);
+  };
 
   // Render a single story section
   const renderSection = (section: StorySection, idx: number) => {
@@ -33,7 +38,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
       <div
         key={i}
         className="overflow-hidden bg-paper cursor-zoom-in group"
-        onClick={() => onImageClick(section.galleryIndices[i])}
+        onClick={() => handleImageClick(section.galleryIndices[i])}
       >
         <img
           src={img.thumb}
@@ -86,7 +91,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
           {img && (
             <div
               className="overflow-hidden cursor-zoom-in group"
-              onClick={() => onImageClick(section.galleryIndices[0])}
+              onClick={() => handleImageClick(section.galleryIndices[0])}
             >
               <img
                 src={img.full}
@@ -131,7 +136,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
                   {annotationCallouts}
                   <div
                     className="overflow-hidden bg-paper cursor-zoom-in group"
-                    onClick={() => onImageClick(galleryIdx)}
+                    onClick={() => handleImageClick(galleryIdx)}
                   >
                     <img
                       src={img.thumb}
@@ -158,7 +163,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
                     {beforeImg && (
                       <div
                         className="overflow-hidden bg-paper cursor-zoom-in group"
-                        onClick={() => onImageClick(beforeIndex)}
+                        onClick={() => handleImageClick(beforeIndex)}
                       >
                         <img
                           src={beforeImg.thumb}
@@ -177,7 +182,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
                     {afterImg && (
                       <div
                         className="overflow-hidden bg-paper cursor-zoom-in group"
-                        onClick={() => onImageClick(afterIndex)}
+                        onClick={() => handleImageClick(afterIndex)}
                       >
                         <img
                           src={afterImg.thumb}
@@ -233,7 +238,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
                   {img && (
                     <div
                       className="overflow-hidden bg-paper cursor-zoom-in group"
-                      onClick={() => onImageClick(s.galleryIndices[0])}
+                      onClick={() => handleImageClick(s.galleryIndices[0])}
                     >
                       <img
                         src={img.thumb}
@@ -261,7 +266,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
       {/* Hero Header */}
       <header className="flex flex-col gap-8">
         <button
-          onClick={onBack}
+          onClick={() => navigate(`/${lang}/selected-works`)}
           className="font-mono text-xs text-slate-400 hover:text-ink transition-colors uppercase tracking-widest flex items-center gap-2"
         >
           <span className="text-primary">←</span> {t.back}
@@ -352,7 +357,7 @@ export default function ProjectDetail({ projectId, onBack, onImageClick, languag
               <div
                 key={i}
                 className="overflow-hidden bg-paper cursor-zoom-in group"
-                onClick={() => onImageClick(i)}
+                onClick={() => handleImageClick(i)}
               >
                 <img
                   src={img.thumb}
