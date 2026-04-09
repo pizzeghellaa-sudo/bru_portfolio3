@@ -5,7 +5,7 @@ import { switchLocalePath } from '../i18n/localePaths';
 
 interface SidebarProps {
   language: Language;
-  currentTime: Date;
+  currentTime: Date | null;
 }
 
 const NAV_ITEMS = [
@@ -80,7 +80,7 @@ export default function Sidebar({ language, currentTime }: SidebarProps) {
         </div>
         <p className="font-mono text-xs text-slate-400 uppercase tracking-widest">
           VALEGGIO SUL MINCIO, IT <br />
-          {formatTime(currentTime)}
+          {currentTime ? formatTime(currentTime) : ''}
         </p>
       </div>
     </aside>

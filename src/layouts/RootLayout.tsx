@@ -19,13 +19,14 @@ export default function RootLayout() {
   const language: Language = lang === 'it' ? 'IT' : 'EN';
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState<Date | null>(null);
   const [modalImages, setModalImages] = useState<string[]>([]);
   const [zoomIndex, setZoomIndex] = useState<number | null>(null);
   const mainRef = useRef<HTMLElement>(null);
 
-  // Clock tick
+  // Clock tick — starts client-side only to avoid SSG hydration mismatch
   useEffect(() => {
+    setCurrentTime(new Date());
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
