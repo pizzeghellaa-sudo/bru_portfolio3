@@ -16,4 +16,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://bru-portfolio-flax.vercel.app/sitemap.xml
+Sitemap: https://bru-portfolio3.vercel.app/sitemap.xml

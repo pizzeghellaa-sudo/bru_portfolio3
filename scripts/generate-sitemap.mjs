@@ -3,7 +3,7 @@ import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
-const SITE_URL = 'https://bru-portfolio-flax.vercel.app';
+const SITE_URL = 'https://bru-portfolio3.vercel.app';
 const TODAY = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 
 const LANGS = ['en', 'it'];
