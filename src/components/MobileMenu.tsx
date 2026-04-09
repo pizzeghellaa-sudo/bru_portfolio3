@@ -51,6 +51,12 @@ export default function MobileMenu({
         </div>
       </div>
 
+      {location.pathname.includes('selected-works') && (
+        <div className="md:hidden px-6 py-3 border-b border-ink/10 bg-background-light">
+          <p className="font-mono text-[11px] text-slate-500 tracking-wide">{t.signal.legalNote}</p>
+        </div>
+      )}
+
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.nav
