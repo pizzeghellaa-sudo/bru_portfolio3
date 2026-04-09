@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite-react-ssg build",
+    "build": "node scripts/generate-sitemap.mjs && vite-react-ssg build",
     "build:spa": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
