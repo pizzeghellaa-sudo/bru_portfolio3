@@ -65,6 +65,9 @@ export default function Sidebar({ language, currentTime }: SidebarProps) {
       </div>
 
       <div className="p-8 flex flex-col gap-4">
+        {location.pathname.includes('selected-works') && (
+          <p className="font-mono text-[11px] text-slate-500 tracking-wide">{t.signal.legalNote}</p>
+        )}
         <div className="flex gap-4 border-t border-ink/10 pt-8">
           {(['EN', 'IT'] as Language[]).map((l) => (
             <button

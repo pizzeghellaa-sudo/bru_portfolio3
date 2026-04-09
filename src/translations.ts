@@ -62,7 +62,7 @@ export const TRANSLATIONS = {
       email: 'bulgarellibru@gmail.com',      
       availability: 'AVAILABLE FOR NEW OPPORTUNITIES',
       responseTime: 'RESPONSE TIME: < 24HRS',
-      legalNote: 'All works are presented for portfolio purposes. Rights belong to the respective clients where applicable. No confidential information is disclosed.',
+      legalNote: 'The work presented in this portfolio was carried out during the collaboration with the indicated company, and is shown exclusively for the purpose of demonstrating professional skills. All rights relating to the projects belong to their respective owners.',
       footer: '© 2026 Bruna Bulgarelli.\nALL RIGHTS RESERVED.',
       builtWith: 'BUILT WITH AI',
       categories: {
@@ -136,7 +136,7 @@ export const TRANSLATIONS = {
       email: 'bulgarellibru@gmail.com',
       availability: 'DISPONIBILE PER NUOVE OPPORTUNITÀ',
       responseTime: 'TEMPO DI RISPOSTA: < 24ORE',
-      legalNote: 'Tutti i lavori sono presentati a scopo di portfolio. I diritti appartengono ai rispettivi clienti, ove applicabile. Nessuna informazione riservata viene divulgata.',
+      legalNote: "Il lavoro presentato in questo portfolio, realizzato durante la collaborazione con l'azienda indicata, è mostrato esclusivamente per dimostrare le competenze professionali acquisite. I diritti appartengono ai rispettivi clienti, ove applicabile.",
       footer: '© 2026 Bruna Bulgarelli.\nTUTTI I DIRITTI RISERVATI.',
       builtWith: 'CREATO CON AI',
       categories: {
