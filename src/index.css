@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-primary: #fa3d33;
+  --color-background-light: #f8f6f5;
+  --color-background-dark: #23100f;
+  --color-paper: #F4F4F0;
+  --color-ink: #000000;
+}
+
+@layer utilities {
+  .swiss-grid-lines {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), 
+                      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 120px 24px;
+  }
+  
+  .blend-multiply {
+    mix-blend-mode: multiply;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+body {
+  @apply bg-background-light font-display text-ink antialiased selection:bg-primary selection:text-white;
+}

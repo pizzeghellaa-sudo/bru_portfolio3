@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx playwright:*)",
+      "Bash(npx @playwright/mcp --version)",
+      "Bash(npx @playwright/mcp@latest --help)",
+      "Bash(cp \"C:/Users/andpi/Downloads/system diagram.jpg\" \"C:/Data/Developers/bru_portfolio2/src/assets/projects/emozione3/7-thumb.jpg\")",
+      "Bash(cp \"C:/Users/andpi/Downloads/system diagram.jpg\" \"C:/Data/Developers/bru_portfolio2/src/assets/projects/emozione3/7-full.jpg\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d, indent=2\\)\\)\")",
+      "Bash(find /c/Users/andpi/.claude -maxdepth 2 -name \"*.json\" -exec grep -l \"mcpServers\" {} \\\\;)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "playwright"
+  ]
+}

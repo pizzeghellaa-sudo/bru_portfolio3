@@ -1,0 +1,36 @@
+I made a geo-seo audit to my site.
+
+here the results:
+ 
+  Overall GEO Score: 23/100 — Critical
+
+  ┌──────────────────────────┬────────┐
+  │         Category         │ Score  │
+  ├──────────────────────────┼────────┤
+  │ AI Citability            │ 31/100 │
+  ├──────────────────────────┼────────┤
+  │ Brand Authority          │ 8/100  │
+  ├──────────────────────────┼────────┤
+  │ Content E-E-A-T          │ 52/100 │
+  ├──────────────────────────┼────────┤
+  │ Technical GEO            │ 17/100 │
+  ├──────────────────────────┼────────┤
+  │ Schema & Structured Data │ 0/100  │
+  ├──────────────────────────┼────────┤
+  │ Platform Optimization    │ 8/100  │
+  └──────────────────────────┴────────┘
+
+  Root cause in one sentence: The site is a client-side React SPA — GPTBot, ClaudeBot, and PerplexityBot can't execute
+  JavaScript and see only the words "Bru Bulgarelli". Everything else is secondary to fixing this.
+
+  Top 5 Quick Wins (~80 min total):
+  1. Add Person + ProfilePage JSON-LD to index.html — works even without SSR
+  2. Add meta description + Open Graph tags
+  3. Create /public/llms.txt
+  4. Create /public/robots.txt with AI crawler directives
+  5. Fix duplicate H1
+
+full detailed report is here [rules\GEO-AUDIT-REPORT.md](rules/full-specification.md)
+
+
+Please make a plan to modifiy my site rating on seo geo audit.

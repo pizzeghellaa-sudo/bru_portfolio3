@@ -1,0 +1,44 @@
+# Bru Bulgarelli — Brand & Visual Designer
+
+Bruna Bulgarelli (Bru Bulgarelli) is an Italian brand and visual designer based in Valeggio sul Mincio (Verona), Italy.
+
+She specialises in brand identity, visual systems, editorial design, packaging, and print production for hospitality, cultural, and commercial clients.
+
+## Professional Experience
+
+- Freelance (2025 – present): Brand identity and visual communication projects for hospitality, cultural and commercial clients.
+- Lead Designer at Europlan S.p.A. (2017–2024): Designed brand and communication materials for a portfolio of Italian hotels and residences on Lake Garda. Managed full production from concept to print, including digital assets.
+- Graphic Team Leader at Wishdays S.r.l. (2014–2016): Led in-house design team, managed seasonal workloads, developed brand guidelines for multiple brands, implemented XML-based automated layout workflows.
+- Graphic Designer at Total Quality Food S.r.l. (2012–2013): Graphic and regulatory support for EU food labelling compliance; trade show and event materials.
+- Account & Graphic Designer at Verba DDB S.r.l. (2005–2010): Managed large retail clients including PAM Group, Panorama and Bata Footwear; oversaw promotional materials, flyers, POP displays and in-store signage.
+- Freelance (2003–2005): Editorial design, multilingual layout, technical manuals, static websites; collaborations with publishers, agencies and software companies.
+- Founder & Co-owner at Pressart S.r.l. (1995–2002): Co-founded a creative agency specialising in branding and printed communication; developed visual identities, editorial design and packaging.
+
+## Selected Projects
+
+- Hotel Caesius Brand Book (Branding): Visual identity system and brand guidelines for a luxury hospitality brand on Lake Garda. Implemented across printed materials, digital platforms and internal brand documentation.
+- Europlan (Branding / Print): Graphic and editorial communication materials for multiple hotel and residence properties, including promotional campaigns, trade-fair assets and printed collateral.
+- Kalika (Branding / Print): Brand identity for two young entrepreneurs — logo, colour palette, window graphics and visual system for an urban retail context.
+- Emozione3 Brand Book (Branding): Rebranding of Emozione3, an Italian gift box company. Defined new visual identity system including logo usage, tone of voice and brand applications.
+- Emozione3 Pop (Print/POP): Design and development of POP materials for retail — seasonal displays, co-marketing initiatives and new product launches across shopping malls, bookstores and large-scale retail.
+- In-Store Promotion for Panorama / PAM (Print/POP): Promotional materials, flyers, POP displays and in-store signage for Italy's largest supermarket group.
+- Il Marmo Brochure (Editorial): Corporate brochure for a marble company; clean visual narrative from raw material to installation; CMYK with Pantone inks, embossed metallic cover.
+- Hotel Nettuno Paintings (Art / Print): Series of cardboard artworks inspired by Lake Garda landscape; stylised vector graphic language; transparent raised varnish finish.
+- Personal Website (UI/UX/Product): Designed and built this portfolio using AI-assisted design (Stitch AI) and development (React + Vite + Vercel).
+
+## Skills
+
+Adobe Creative Suite (InDesign, Illustrator, Photoshop), brand identity systems, editorial and publication design, packaging design, POP materials, print production, wayfinding, XML automated layout workflows, web design.
+
+## Contact
+
+Email: bulgarellibru@gmail.com
+Phone: +39 347 3587524
+Location: Valeggio sul Mincio (Verona), Italy
+Available for freelance brand identity and visual system projects.
+
+## Links
+
+- Portfolio: https://bru-portfolio-flax.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/bruna-bulgarelli-8a9b7819/
+- Behance: https://www.behance.net/brubulgarelli

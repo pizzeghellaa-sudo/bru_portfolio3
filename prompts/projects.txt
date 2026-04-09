@@ -1,0 +1,4 @@
+I want to redesign completely the portfolio sections. I would start from the Personal website selected work.
+I made a mockup with a different layout as in the attached image. In this page I want the create a story like section where I need to add images and text and a side bar with work informations. It is mandatory to keep the exact same color schema,icons, font as in the other pages.
+Preserve the localization EN and IT and make sure the mobile version is also working well.
+Keep the zoom funcionality working as now. Use the same folder and filename logic to load the images, both thumbnails and full size.
