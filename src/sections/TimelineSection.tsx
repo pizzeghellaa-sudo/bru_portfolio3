@@ -14,8 +14,8 @@ export default function TimelineSection() {
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = `${t.title} — Bru Bulgarelli`;
   const pageDescription = language === 'EN'
-    ? 'Bru Bulgarelli: over 30 years of brand identity, visual design and print production across agency, in-house and freelance roles in Italy.'
-    : 'Bru Bulgarelli: oltre 30 anni di brand identity, design visivo e produzione stampa tra agenzie, contesti in-house e collaborazioni freelance.';
+    ? 'Professional timeline of Bru Bulgarelli — Brand & Visual Designer. 30+ years across brand identity, retail communication and hospitality, from 1995 to present.'
+    : 'Percorso professionale di Bru Bulgarelli — Brand & Visual Designer. Oltre 30 anni tra brand identity, comunicazione retail e ospitalità, dal 1995 a oggi.';
   const jsonLd = [
     buildPersonJsonLd(),
     buildBreadcrumbJsonLd([

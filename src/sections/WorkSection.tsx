@@ -18,8 +18,8 @@ export default function WorkSection() {
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = `${t.title} — Bru Bulgarelli`;
   const pageDescription = language === 'EN'
-    ? 'Selected works by Bru Bulgarelli — brand identity, editorial, packaging and retail design for hospitality, commercial and cultural clients.'
-    : 'Lavori selezionati di Bru Bulgarelli — brand identity, editoria, packaging e retail per clienti nei settori ospitalità, commerciale e culturale.';
+    ? 'Portfolio of Bru Bulgarelli — 8 brand identity and visual design projects across luxury hospitality, retail, packaging and editorial design.'
+    : 'Portfolio di Bru Bulgarelli — 8 progetti di brand identity e visual design tra ospitalità di lusso, retail, packaging ed editoria.';
   const jsonLd = [
     buildPersonJsonLd(),
     buildBreadcrumbJsonLd([
