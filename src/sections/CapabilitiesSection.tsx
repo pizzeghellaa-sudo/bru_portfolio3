@@ -13,8 +13,8 @@ export default function CapabilitiesSection() {
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = `${t.title} — Bru Bulgarelli`;
   const pageDescription = language === 'EN'
-    ? 'Brand identity, visual systems, editorial design, packaging, web design and print production — tools and methodologies.'
-    : 'Brand identity, sistemi visivi, design editoriale, packaging, web design e produzione a stampa — strumenti e metodologie.';
+    ? "Bru Bulgarelli's design disciplines: brand identity, visual systems, editorial design, packaging, web design and print production — Adobe CC."
+    : 'Il metodo di Bru Bulgarelli: brand identity, sistemi visivi, editoria, packaging, web design e stampa — suite Adobe CC e strumenti AI.';
   const jsonLd = [
     buildPersonJsonLd(),
     buildBreadcrumbJsonLd([

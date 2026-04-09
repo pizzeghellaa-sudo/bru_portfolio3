@@ -47,6 +47,10 @@ export interface Project {
     EN: string;
     IT: string;
   };
+  metaDescription?: {
+    EN: string;
+    IT: string;
+  };
   gallery: {
     thumb: string; // Low-res for the gallery list
     full: string;  // High-res for the zoom modal
@@ -133,6 +137,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Designed a scalable brand system for Emozione3, aligning identity, communication and retail environments into a coherent visual framework across physical and digital touchpoints.",
       IT: "Progettato un sistema di brand scalabile per Emozione3, allineando identità, comunicazione e ambienti retail in un framework visivo coerente su touchpoint fisici e digitali."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli designed the brand system for Emozione3 — visual identity, guidelines and retail applications across a scalable design framework.",
+      IT: "Bru Bulgarelli ha progettato il sistema di brand per Emozione3 — identità visiva, linee guida e applicazioni retail in un framework scalabile."
     },
     meta: {
       subtitle: {
@@ -256,6 +264,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Designed and coordinated retail communication across campaigns, in-store materials and promotional systems, ensuring consistency between brand, product and customer experience.",
       IT: "Progettato e coordinato la comunicazione retail su campagne, materiali in-store e sistemi promozionali, garantendo coerenza tra brand, prodotto ed esperienza del cliente."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli designed retail communication for PAM-Panorama — campaigns, in-store materials and promotional assets for Italy's largest supermarket group.",
+      IT: "Bru Bulgarelli ha progettato la comunicazione retail per PAM-Panorama — campagne, materiali in-store e asset promozionali per la grande distribuzione italiana."
     },
     meta: {
       subtitle: {
@@ -394,6 +406,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "For over ten years I worked in the design department of Europlan, a leading hospitality group on Lake Garda serving an international market. I developed graphic and editorial communication materials for multiple properties, including promotional campaigns, trade-fair assets, and printed collateral.\n\nMy role covered graphic design, editorial layout, photo post-production, and retouching, as well as the design of visual communication systems and wayfinding across hospitality, wellness, events, and business contexts.",
       IT: "Per oltre dieci anni ho lavorato nel reparto grafico di Europlan, realtà turistica di riferimento sul Lago di Garda con un pubblico internazionale. Ho sviluppato materiali di comunicazione grafica ed editoriale per diverse strutture del gruppo, tra cui campagne promozionali, materiali per fiere e supporti stampati.\n\nIl mio ruolo comprendeva graphic design, impaginazione editoriale, post-produzione fotografica e fotoritocco, oltre alla progettazione di sistemi di comunicazione visiva e wayfinding applicati ai contesti di ospitalità, wellness, eventi e business."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli led brand and editorial design for Europlan, a Lake Garda hospitality group — campaigns, trade fair materials and print collateral over 10 years.",
+      IT: "Bru Bulgarelli ha guidato il design di brand ed editoriale per Europlan, gruppo turistico del Lago di Garda — campagne, materiali fieristici e stampa per oltre 10 anni."
     }
   },  
   {
@@ -407,6 +423,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Hotel Caesius is a luxury hospitality brand located on Lake Garda. The project involved the creation of a visual identity system and brand guidelines for print and digital applications.\n\nThe identity was implemented across all hotel touchpoints including printed materials, digital platforms and internal brand documentation.",
       IT: "L’Hotel Caesius è un brand di ospitalità di lusso situato sul Lago di Garda. Il progetto ha previsto la creazione di un sistema di identità visiva e delle linee guida del brand per applicazioni su stampa e digitale.\n\nL’identità è stata implementata in tutti i touchpoint dell’hotel, inclusi materiali stampati, piattaforme digitali e documentazione interna del brand."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli created the visual identity system and brand guidelines for Hotel Caesius, a luxury hospitality brand on Lake Garda.",
+      IT: "Bru Bulgarelli ha creato il sistema di identità visiva e le linee guida del brand per Hotel Caesius, brand di lusso sul Lago di Garda."
     },
     meta: {
       subtitle: {
@@ -492,6 +512,10 @@ export const PROJECTS: Project[] = [
       EN: "Kalika Branding Project\n\nThe branding project reflects the identity of the two young entrepreneurs: dynamic, feminine and approachable, with a careful and professional approach.\n\nAt the center of the visual system there is a versatile and easily recognizable logo, developed in a young and bright color palette, designed to communicate freshness, energy and positivity across all touchpoints.\n\nThe window graphic also helps to strengthen the brand presence and recognition over time in the urban space.",
       IT: "Progetto di Branding Kalika\n\nIl progetto di branding riflette l’identità delle due giovani imprenditrici: dinamica, femminile e accessibile, unita a un approccio sempre curato e professionale.\n\nAl centro del sistema visivo si trova un logo versatile e immediatamente riconoscibile, declinato in una palette cromatica giovane e vivace, pensata per trasmettere freschezza, energia e positività su ogni touchpoint.\n\nAnche la vetrofania contribuisce a rafforzare nel tempo la presenza e la riconoscibilità del brand nello spazio urbano."
     },
+    metaDescription: {
+      EN: "Bru Bulgarelli designed the brand identity for Kalika — logo, colour palette, print materials and window graphics for an urban retail business.",
+      IT: "Bru Bulgarelli ha progettato l’identità di brand per Kalika — logo, palette, materiali di stampa e vetrofanie per un brand retail urbano."
+    },
     meta: {
       subtitle: {
         EN: "BRANDING / VISUAL IDENTITY",
@@ -563,6 +587,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Editorial Project — Marble Company\n\nDesign of a corporate brochure for a marble company, aimed at conveying a more contemporary and authoritative image while highlighting technical expertise and production complexity.\n\nThe project develops a clean, process-driven visual narrative, from raw material selection to advanced manufacturing and installation, supported by a curated gallery of high-end architectural applications.\n\nA refined color palette and premium print production (CMYK with Pantone inks) enhance the design, with an embossed metallic cover where stone names become a distinctive typographic element.\n\nThe result is an elegant, timeless editorial piece that translates technical know-how into a clear and sophisticated visual story.",
       IT: "Progetto editoriale — Azienda settore marmo\n\nDesign di una brochure istituzionale per un’azienda del settore marmo, pensata per esprimere un’immagine contemporanea e autorevole, valorizzando know-how e complessità produttiva.\n\nIl progetto sviluppa una narrazione visiva essenziale, centrata sul processo, dalla selezione della materia prima alle lavorazioni e installazione, affiancata da una gallery di applicazioni architettoniche di alto profilo.\n\nPalette raffinata e stampa di pregio (quadricromia con Pantoni) definiscono il linguaggio visivo, mentre la copertina introduce un segno distintivo: i nomi delle pietre impressi a rilievo su fondo metallizzato.\n\nIl risultato è un oggetto editoriale elegante e senza tempo, capace di tradurre la competenza tecnica in un racconto visivo chiaro e sofisticato."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli designed the corporate brochure for Il Marmo — editorial design, CMYK with Pantone inks and an embossed metallic cover.",
+      IT: "Bru Bulgarelli ha progettato la brochure istituzionale per Il Marmo — design editoriale, quadricromia con Pantoni e copertina metallizzata a rilievo."
     }
   },  
   {
@@ -576,6 +604,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "The work consists of a series of cardboard artworks inspired by the landscape of Lake Garda, reinterpreted through a stylized and minimal vector graphic language.\n\nThe system includes three formats, square, horizontal and vertical, designed to integrate with the hotel spaces and create visual continuity with the surrounding territory.\n\nProduced on cardboard with a transparent raised varnish, the pieces combine lightness, sustainability and attention to detail.",
       IT: "Il lavoro consiste in una serie di opere su cartone ispirate al paesaggio del Lago di Garda, reinterpretato attraverso un linguaggio grafico vettoriale stilizzato e minimale.\n\nIl sistema include tre formati, quadrato, orizzontale e verticale, progettati per integrarsi con gli spazi dell’hotel e creare una continuità visiva con il territorio circostante.\n\nProdotte su cartone con vernice trasparente a rilievo, le opere combinano leggerezza, sostenibilità e attenzione al dettaglio."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli created cardboard artworks for Hotel Nettuno inspired by Lake Garda — vector illustration with transparent raised varnish finish.",
+      IT: "Bru Bulgarelli ha creato opere su cartone per Hotel Nettuno ispirate al Lago di Garda — illustrazione vettoriale con finitura in vernice a rilievo."
     }
   },
  {
@@ -589,6 +621,10 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Personal portfolio website\n\n1.Ideation — defined project goals, audience and positioning.\n\n2. Information Architecture — structured pages, navigation and content hierarchy.\n\n3. Wireframing — explored layout structures and user flows.\n\n4. Visual Design — developed typography, visual system and UI components using Stitch AI through iterative prompt-based design sessions.\n\n5. Development & Launch — built the website with AI-assisted coding using Gemini 3 Flash (Vite, React), iterating features before version control on GitHub and automated deployment via Vercel.",
       IT: "Sito web portfolio personale\n\n1. Ideazione — definizione degli obiettivi del progetto, del pubblico di riferimento e del posizionamento.\n\n2. Architettura dell’informazione — strutturazione delle pagine, della navigazione e della gerarchia dei contenuti.\n\n3. Wireframing — esplorazione delle strutture di layout e dei flussi utente.\n\n4. Visual Design — sviluppo della tipografia, del sistema visivo e dei componenti UI utilizzando Stitch AI attraverso sessioni iterative di progettazione basate su prompt.\n\n5. Sviluppo e lancio — realizzazione del sito con coding assistito dall’IA tramite Gemini 3 Flash (Vite, React), iterazione delle funzionalità prima del versionamento su GitHub e deploy automatico tramite Vercel."
+    },
+    metaDescription: {
+      EN: "Bru Bulgarelli designed and built her personal portfolio — AI-assisted design with Stitch AI, developed in React and Vite, deployed on Vercel.",
+      IT: "Bru Bulgarelli ha progettato e sviluppato il suo portfolio personale — design con Stitch AI, sviluppo in React e Vite, deploy su Vercel."
     },
     meta: {
       subtitle: {

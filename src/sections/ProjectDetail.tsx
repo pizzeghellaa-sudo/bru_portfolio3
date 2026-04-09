@@ -19,7 +19,7 @@ export default function ProjectDetail() {
 
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = `${project.title} — Bru Bulgarelli`;
-  const pageDescription = project.description[language].split('.')[0] + '.';
+  const pageDescription = project.metaDescription?.[language] ?? project.description[language].split('.')[0] + '.';
   const workSectionTitle = language === 'EN' ? 'Selected Works' : 'Lavori Selezionati';
   const jsonLd = [
     buildCreativeWorkJsonLd(project, language, location.pathname),

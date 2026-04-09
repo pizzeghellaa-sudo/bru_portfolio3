@@ -22,7 +22,7 @@ export default function IndexSection() {
 
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = 'Bru Bulgarelli — Brand & Visual Designer';
-  const pageDescription = t.description;
+  const pageDescription = t.metaDescription;
   const jsonLd = [
     buildPersonJsonLd(),
     buildProfilePageJsonLd(langSegment, location.pathname),

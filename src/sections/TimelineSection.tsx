@@ -14,8 +14,8 @@ export default function TimelineSection() {
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = `${t.title} — Bru Bulgarelli`;
   const pageDescription = language === 'EN'
-    ? 'Professional experience — over 30 years in brand identity, visual systems, editorial design and packaging.'
-    : 'Esperienza professionale — oltre 30 anni nel campo della brand identity, sistemi visivi, design editoriale e packaging.';
+    ? 'Bru Bulgarelli: over 30 years of brand identity, visual design and print production across agency, in-house and freelance roles in Italy.'
+    : 'Bru Bulgarelli: oltre 30 anni di brand identity, design visivo e produzione stampa tra agenzie, contesti in-house e collaborazioni freelance.';
   const jsonLd = [
     buildPersonJsonLd(),
     buildBreadcrumbJsonLd([
