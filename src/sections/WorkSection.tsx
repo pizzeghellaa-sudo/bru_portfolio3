@@ -1,16 +1,32 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useOutletContext, useNavigate, useParams } from 'react-router-dom';
+import { useOutletContext, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { PROJECTS } from '../types';
 import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
+import PageHead from '../components/PageHead';
+import { buildPersonJsonLd, buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
 
 export default function WorkSection() {
   const { language } = useOutletContext<LayoutContext>();
   const { lang } = useParams<{ lang: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const [filter, setFilter] = useState('ALL');
   const t = TRANSLATIONS[language].work;
+
+  const langSegment = (lang ?? 'en') as 'en' | 'it';
+  const pageTitle = `${t.title} — Bru Bulgarelli`;
+  const pageDescription = language === 'EN'
+    ? 'Portfolio of brand identity and visual design projects for hospitality, commercial and cultural clients.'
+    : 'Portfolio di progetti di brand identity e visual design per clienti nel settore ospitalità, commerciale e culturale.';
+  const jsonLd = [
+    buildPersonJsonLd(),
+    buildBreadcrumbJsonLd([
+      { name: 'Home', url: `/${lang}/` },
+      { name: t.title, url: `/${lang}/selected-works` },
+    ]),
+  ];
   const filters = ['ALL', 'IDENTITY', 'DIGITAL', 'POP', 'PRINT'] as const;
 
   const filteredProjects = PROJECTS.filter(project => {
@@ -24,7 +40,15 @@ export default function WorkSection() {
   });
 
   return (
-    <div className="flex flex-col gap-24">
+    <>
+      <PageHead
+        title={pageTitle}
+        description={pageDescription}
+        path={location.pathname}
+        lang={langSegment}
+        jsonLd={jsonLd}
+      />
+      <div className="flex flex-col gap-24">
       <header className="flex flex-col md:flex-row justify-between items-baseline gap-8">
         <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-ink uppercase"
                     style={{ color: 'rgb(179, 178, 178)' }}>
@@ -104,5 +128,6 @@ export default function WorkSection() {
         </AnimatePresence>
       </div>
     </div>
+    </>
   );
 }

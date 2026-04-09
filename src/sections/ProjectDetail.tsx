@@ -1,17 +1,34 @@
-import { useOutletContext, useNavigate, useParams } from 'react-router-dom';
+import { useOutletContext, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { PROJECTS, StorySection } from '../types';
 import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
+import PageHead from '../components/PageHead';
+import { buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
+import { buildCreativeWorkJsonLd } from '../seo/projectJsonLd';
 
 export default function ProjectDetail() {
   const { language, onImageClick } = useOutletContext<LayoutContext>();
   const { slug, lang } = useParams<{ slug: string; lang: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
 
   const project = PROJECTS.find(p => p.slug === slug);
   const t = TRANSLATIONS[language].work;
 
   if (!project) return null;
+
+  const langSegment = (lang ?? 'en') as 'en' | 'it';
+  const pageTitle = `${project.title} — Bru Bulgarelli`;
+  const pageDescription = project.description[language].split('.')[0] + '.';
+  const workSectionTitle = language === 'EN' ? 'Selected Works' : 'Lavori Selezionati';
+  const jsonLd = [
+    buildCreativeWorkJsonLd(project, language, location.pathname),
+    buildBreadcrumbJsonLd([
+      { name: 'Home', url: `/${lang}/` },
+      { name: workSectionTitle, url: `/${lang}/selected-works` },
+      { name: project.title, url: `/${lang}/selected-works/${project.slug}` },
+    ]),
+  ];
 
   const meta = project.meta;
 
@@ -262,7 +279,15 @@ export default function ProjectDetail() {
   };
 
   return (
-    <div className="flex flex-col gap-12">
+    <>
+      <PageHead
+        title={pageTitle}
+        description={pageDescription}
+        path={location.pathname}
+        lang={langSegment}
+        jsonLd={jsonLd}
+      />
+      <div className="flex flex-col gap-12">
       {/* Hero Header */}
       <header className="flex flex-col gap-8">
         <button
@@ -371,5 +396,6 @@ export default function ProjectDetail() {
         </div>
       )}
     </div>
+    </>
   );
 }

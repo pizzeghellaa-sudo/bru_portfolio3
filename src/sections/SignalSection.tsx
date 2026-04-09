@@ -1,12 +1,29 @@
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, useLocation, useParams } from 'react-router-dom';
 import { ExternalLink } from 'lucide-react';
 import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
 import bruPng from '../assets/bru.png';
+import PageHead from '../components/PageHead';
+import { buildPersonJsonLd, buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
 
 export default function SignalSection() {
   const { language } = useOutletContext<LayoutContext>();
+  const { lang } = useParams<{ lang: string }>();
+  const location = useLocation();
   const t = TRANSLATIONS[language].signal;
+
+  const langSegment = (lang ?? 'en') as 'en' | 'it';
+  const pageTitle = language === 'EN' ? 'Contact — Bru Bulgarelli' : 'Contatti — Bru Bulgarelli';
+  const pageDescription = language === 'EN'
+    ? 'Get in touch with Bru Bulgarelli — brand and visual designer based in Valeggio sul Mincio, Verona, Italy.'
+    : 'Contatta Bru Bulgarelli — brand e visual designer a Valeggio sul Mincio, Verona, Italia.';
+  const jsonLd = [
+    buildPersonJsonLd(),
+    buildBreadcrumbJsonLd([
+      { name: 'Home', url: `/${lang}/` },
+      { name: language === 'EN' ? 'Contact' : 'Contatti', url: `/${lang}/contact` },
+    ]),
+  ];
   const links = [
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/bruna-bulgarelli-8a9b7819/', category: 'NETWORK' },
     { label: 'Behance', url: 'https://www.behance.net/brubulgarelli', category: 'VISUALS' },
@@ -14,7 +31,15 @@ export default function SignalSection() {
   ];
 
   return (
-    <div className="flex-1 flex flex-col justify-center relative">
+    <>
+      <PageHead
+        title={pageTitle}
+        description={pageDescription}
+        path={location.pathname}
+        lang={langSegment}
+        jsonLd={jsonLd}
+      />
+      <div className="flex-1 flex flex-col justify-center relative">
       <div className="mb-24 flex flex-col md:flex-row items-start md:items-end gap-12">
         <div className="w-48 h-48 overflow-hidden ink/10 flex-shrink-0">
           <img
@@ -69,5 +94,6 @@ export default function SignalSection() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

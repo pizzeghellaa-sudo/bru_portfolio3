@@ -5,6 +5,8 @@ import { TRANSLATIONS } from '../translations';
 import type { Language } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
 import { switchLocalePath } from '../i18n/localePaths';
+import PageHead from '../components/PageHead';
+import { buildPersonJsonLd, buildProfilePageJsonLd } from '../seo/pageJsonLd';
 
 export default function IndexSection() {
   const { language } = useOutletContext<LayoutContext>();
@@ -18,8 +20,25 @@ export default function IndexSection() {
     navigate(switchLocalePath(location.pathname, target));
   };
 
+  const langSegment = (lang ?? 'en') as 'en' | 'it';
+  const pageTitle = 'Bru Bulgarelli — Brand & Visual Designer';
+  const pageDescription = t.description;
+  const jsonLd = [
+    buildPersonJsonLd(),
+    buildProfilePageJsonLd(langSegment, location.pathname),
+  ];
+
   return (
-    <div className="flex-1 flex flex-col justify-center relative">
+    <>
+      <PageHead
+        title={pageTitle}
+        description={pageDescription}
+        path={location.pathname}
+        lang={langSegment}
+        jsonLd={jsonLd}
+        ogType="profile"
+      />
+      <div className="flex-1 flex flex-col justify-center relative">
       <div className="relative z-10">
         {/* Language Selector (Mobile & Desktop) */}
         <div className="flex items-center gap-6 mb-12">
@@ -81,5 +100,6 @@ export default function IndexSection() {
         </div>
       </div>
     </div>
+    </>
   );
 }

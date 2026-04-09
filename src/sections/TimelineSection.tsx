@@ -1,13 +1,39 @@
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, useLocation, useParams } from 'react-router-dom';
 import { EXPERIENCE } from '../types';
 import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
+import PageHead from '../components/PageHead';
+import { buildPersonJsonLd, buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
 
 export default function TimelineSection() {
   const { language } = useOutletContext<LayoutContext>();
+  const { lang } = useParams<{ lang: string }>();
+  const location = useLocation();
   const t = TRANSLATIONS[language].timeline;
+
+  const langSegment = (lang ?? 'en') as 'en' | 'it';
+  const pageTitle = `${t.title} — Bru Bulgarelli`;
+  const pageDescription = language === 'EN'
+    ? 'Professional experience — over 30 years in brand identity, visual systems, editorial design and packaging.'
+    : 'Esperienza professionale — oltre 30 anni nel campo della brand identity, sistemi visivi, design editoriale e packaging.';
+  const jsonLd = [
+    buildPersonJsonLd(),
+    buildBreadcrumbJsonLd([
+      { name: 'Home', url: `/${lang}/` },
+      { name: t.title, url: `/${lang}/experience` },
+    ]),
+  ];
+
   return (
-    <div className="flex flex-col gap-24">
+    <>
+      <PageHead
+        title={pageTitle}
+        description={pageDescription}
+        path={location.pathname}
+        lang={langSegment}
+        jsonLd={jsonLd}
+      />
+      <div className="flex flex-col gap-24">
       <header>
         <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-ink uppercase"
             style={{ color: 'rgb(179, 178, 178)' }}>
@@ -39,5 +65,6 @@ export default function TimelineSection() {
         ))}
       </div>
      </div>
+    </>
   );
 }

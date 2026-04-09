@@ -1,12 +1,38 @@
-import { useOutletContext } from 'react-router-dom';
+import { useOutletContext, useLocation, useParams } from 'react-router-dom';
 import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
+import PageHead from '../components/PageHead';
+import { buildPersonJsonLd, buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
 
 export default function CapabilitiesSection() {
   const { language } = useOutletContext<LayoutContext>();
+  const { lang } = useParams<{ lang: string }>();
+  const location = useLocation();
   const t = TRANSLATIONS[language].capabilities;
+
+  const langSegment = (lang ?? 'en') as 'en' | 'it';
+  const pageTitle = `${t.title} — Bru Bulgarelli`;
+  const pageDescription = language === 'EN'
+    ? 'Brand identity, visual systems, editorial design, packaging, web design and print production — tools and methodologies.'
+    : 'Brand identity, sistemi visivi, design editoriale, packaging, web design e produzione a stampa — strumenti e metodologie.';
+  const jsonLd = [
+    buildPersonJsonLd(),
+    buildBreadcrumbJsonLd([
+      { name: 'Home', url: `/${lang}/` },
+      { name: t.title, url: `/${lang}/capabilities` },
+    ]),
+  ];
+
   return (
-    <div className="flex flex-col gap-24">
+    <>
+      <PageHead
+        title={pageTitle}
+        description={pageDescription}
+        path={location.pathname}
+        lang={langSegment}
+        jsonLd={jsonLd}
+      />
+      <div className="flex flex-col gap-24">
       <header className="relative">
         <h2 className="text-6xl md:text-8xl font-black tracking-tighter leading-none text-ink uppercase"
                     style={{ color: 'rgb(179, 178, 178)' }}>
@@ -49,5 +75,6 @@ export default function CapabilitiesSection() {
         </div>
       </div>
     </div>
+    </>
   );
 }
