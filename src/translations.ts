@@ -1,5 +1,3 @@
-import { address } from "motion/react-client";
-
 export type Language = 'EN' | 'IT';
 
 export const TRANSLATIONS = {
