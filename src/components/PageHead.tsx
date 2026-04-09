@@ -60,7 +60,7 @@ export default function PageHead({
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 
       {jsonLdArray.map((ld, i) => (
-        <script key={i} type="application/ld+json">
+        <script type="application/ld+json">
           {JSON.stringify(ld)}
         </script>
       ))}

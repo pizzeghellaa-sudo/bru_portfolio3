@@ -10,7 +10,7 @@ export function buildCreativeWorkJsonLd(project: Project, language: Language, ur
     description: project.description[language],
     url: `${SITE_URL}${url}`,
     image: project.gallery[0]?.full ?? project.image,
-    dateCreated: project.meta?.year ?? undefined,
+    dateCreated: project.meta?.year,
     creator: {
       '@type': 'Person',
       '@id': `${SITE_URL}/#person`,
