@@ -371,6 +371,7 @@ export const PROJECTS: Project[] = [
   /*
   {
     id: "emozione3 pop",
+    slug: "emozione3-pop",
     title: "Emozione3 Pop",
     category: "PRINT/POP",
     tags: ["PRINT/POP"],
