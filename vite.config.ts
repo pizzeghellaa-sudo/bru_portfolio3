@@ -29,11 +29,7 @@ export default defineConfig(() => {
       // Do not modify — file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
-    ssr: {
-      // react-helmet-async ESM build does not expose named exports in Node SSR context;
-      // force Vite to process it via the CJS path during prerendering.
-      noExternal: ['react-helmet-async'],
-    },
+
     ssgOptions: {
       dirStyle: 'nested',
       includedRoutes() {
