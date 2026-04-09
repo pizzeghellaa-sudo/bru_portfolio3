@@ -1,7 +1,8 @@
 import { motion } from 'motion/react';
 import { Globe } from 'lucide-react';
 import { useOutletContext, useNavigate, useParams, useLocation } from 'react-router-dom';
-import { TRANSLATIONS, Language } from '../translations';
+import { TRANSLATIONS } from '../translations';
+import type { Language } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
 import { switchLocalePath } from '../i18n/localePaths';
 

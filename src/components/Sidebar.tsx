@@ -15,7 +15,6 @@ const NAV_ITEMS = [
   { section: 'WORK' as const,         path: 'selected-works' },
   { section: 'CONTACTS' as const,     path: 'contact' },
 ] as const;
-type NavSection = typeof NAV_ITEMS[number]['section'];
 
 function formatTime(date: Date): string {
   return date.toLocaleTimeString('en-GB', {
@@ -57,7 +56,7 @@ export default function Sidebar({ language, currentTime }: SidebarProps) {
                   <span className={`w-2 h-2 bg-primary transition-transform duration-300 ${
                     isActive ? 'scale-100' : 'scale-0 group-hover:scale-100'
                   }`} />
-                  {t.nav[item.section as NavSection]}
+                  {t.nav[item.section]}
                 </>
               )}
             </NavLink>
