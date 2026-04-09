@@ -37,6 +37,7 @@ export interface ProjectMeta {
 
 export interface Project {
   id: string;
+  slug: string;
   title: string;
   category: string;
   tags: string[];
@@ -123,6 +124,7 @@ export const EXPERIENCE: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     id: "emozione3",
+    slug: "emozione3",
     title: "Emozione3",
     category: "BRANDING",
     tags: ["BRANDING"],
@@ -245,6 +247,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "pam panorama",
+    slug: "pam-panorama",
     title: "PAM-Panorama",
     category: "PRINT/POP",
     tags: ["PRINT/POP"],
@@ -381,6 +384,7 @@ export const PROJECTS: Project[] = [
   */ 
   {
     id: "europlan",
+    slug: "europlan",
     title: "Europlan",
     category: "BRANDING / PRINT",
     tags: ["PRINT"],
@@ -393,6 +397,7 @@ export const PROJECTS: Project[] = [
   },  
   {
     id: "caesius",
+    slug: "hotel-caesius",
     title: "Hotel Caesius",
     category: "BRANDING",
     tags: ["BRANDING"],
@@ -475,6 +480,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "kalika",
+    slug: "kalika-skincare",
     title: "Kalika",
     category: "BRANDING / PRINT",
     tags: ["PRINT"],
@@ -547,6 +553,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "ilmarmo",
+    slug: "il-marmo",
     title: "Il Marmo",
     category: "EDITORIAL",
     tags: ["PRINT"],
@@ -559,6 +566,7 @@ export const PROJECTS: Project[] = [
   },  
   {
     id: "nettuno",
+    slug: "hotel-nettuno",
     title: "Hotel Nettuno",
     category: "PAINTINSG / PRINT",
     tags: ["PRINT"],
@@ -571,6 +579,7 @@ export const PROJECTS: Project[] = [
   },
  {
     id: "website",
+    slug: "personal-website",
     title: "Personal Website",
     category: "UI / UX / PRODUCT",
     tags: ["WEB"],
