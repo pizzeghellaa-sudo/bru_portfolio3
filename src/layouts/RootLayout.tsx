@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Outlet, useParams, useLocation, useNavigate } from 'react-router-dom';
+import { Outlet, useParams, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { Analytics } from '@vercel/analytics/react';
 import Sidebar from '../components/Sidebar';
@@ -12,37 +12,9 @@ export interface LayoutContext {
   onImageClick: (images: string[], index: number) => void;
 }
 
-// Section enum kept local — used only for nav active-state mapping
-type Section = 'INDEX' | 'TIMELINE' | 'CAPABILITIES' | 'WORK' | 'CONTACTS';
-
-const PATH_TO_SECTION: Record<string, Section> = {
-  '': 'INDEX',
-  'experience': 'TIMELINE',
-  'capabilities': 'CAPABILITIES',
-  'selected-works': 'WORK',
-  'contact': 'CONTACTS',
-};
-
-const SECTION_TO_PATH: Record<Section, string> = {
-  INDEX: '',
-  TIMELINE: 'experience',
-  CAPABILITIES: 'capabilities',
-  WORK: 'selected-works',
-  CONTACTS: 'contact',
-};
-
-function deriveSection(pathname: string): Section {
-  // pathname is like /en/ or /en/experience or /en/selected-works/slug
-  const parts = pathname.split('/').filter(Boolean);
-  // parts[0] = lang, parts[1] = section (may be undefined for index)
-  const segment = parts[1] ?? '';
-  return PATH_TO_SECTION[segment] ?? 'INDEX';
-}
-
 export default function RootLayout() {
   const { lang } = useParams<{ lang: string }>();
   const location = useLocation();
-  const navigate = useNavigate();
 
   const language: Language = lang === 'it' ? 'IT' : 'EN';
 
@@ -51,8 +23,6 @@ export default function RootLayout() {
   const [modalImages, setModalImages] = useState<string[]>([]);
   const [zoomIndex, setZoomIndex] = useState<number | null>(null);
   const mainRef = useRef<HTMLElement>(null);
-
-  const activeSection = deriveSection(location.pathname);
 
   // Clock tick
   useEffect(() => {
@@ -70,19 +40,6 @@ export default function RootLayout() {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
-  const handleSectionChange = (section: Section) => {
-    const path = SECTION_TO_PATH[section];
-    navigate(`/${lang}/${path}`);
-    setIsMobileMenuOpen(false);
-  };
-
-  const handleLanguageChange = (newLang: Language) => {
-    // Swap /en/ <-> /it/ in the current pathname
-    const newLangSegment = newLang === 'IT' ? 'it' : 'en';
-    const newPath = location.pathname.replace(/^\/(en|it)/, `/${newLangSegment}`);
-    navigate(newPath);
-  };
-
   const handleImageClick = (images: string[], index: number) => {
     setModalImages(images);
     setZoomIndex(index);
@@ -99,21 +56,15 @@ export default function RootLayout() {
       <div className="absolute inset-0 z-0 swiss-grid-lines pointer-events-none opacity-50" />
 
       <Sidebar
-        activeSection={activeSection}
         language={language}
         currentTime={currentTime}
-        onSectionChange={handleSectionChange}
-        onLanguageChange={handleLanguageChange}
       />
 
       {/* Main Content Area */}
       <main ref={mainRef} className="flex-1 h-full overflow-y-auto no-scrollbar relative z-10">
         <MobileMenu
-          activeSection={activeSection}
           language={language}
           isMobileMenuOpen={isMobileMenuOpen}
-          onSectionChange={handleSectionChange}
-          onLanguageChange={handleLanguageChange}
           onToggleMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         />
 

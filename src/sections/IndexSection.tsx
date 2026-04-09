@@ -1,18 +1,20 @@
 import { motion } from 'motion/react';
 import { Globe } from 'lucide-react';
-import { useOutletContext, useNavigate, useParams } from 'react-router-dom';
+import { useOutletContext, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { TRANSLATIONS, Language } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
+import { switchLocalePath } from '../i18n/localePaths';
 
 export default function IndexSection() {
   const { language } = useOutletContext<LayoutContext>();
   const { lang } = useParams<{ lang: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const t = TRANSLATIONS[language].index;
 
   const handleLanguageChange = (newLang: Language) => {
-    const newLangSegment = newLang === 'IT' ? 'it' : 'en';
-    navigate(`/${newLangSegment}/`);
+    const target = newLang === 'IT' ? 'it' : 'en';
+    navigate(switchLocalePath(location.pathname, target));
   };
 
   return (
