@@ -71,8 +71,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Freelance",
     company: "Self employed",
     description: {
-      EN: "Brand identity and visual communication projects for hospitality, cultural and commercial clients. Ongoing professional development through advanced training and certifications.",
-      IT: "Progetti di identità di brand e comunicazione visiva per clienti nei settori hospitality, culturale e commerciale. Aggiornamento professionale continuo attraverso formazione avanzata e certificazioni."
+      EN: "Brand identity and visual systems for hospitality, cultural and commercial clients. Focus on structured design, scalable applications and consistency across touchpoints. Continuous development through advanced training and AI-driven workflows.",
+      IT: "Brand identity e sistemi visivi per clienti nei settori hospitality, culturale e commerciale. Focus su progettazione strutturata, applicazioni scalabili e coerenza tra i diversi touchpoint. Aggiornamento continuo attraverso formazione avanzata e integrazione di workflow basati su AI."
     }
   },
   {
@@ -80,8 +80,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Lead Designer",
     company: "Europlan S.p.A",
     description: {
-      EN: "Design and production of brand and communication materials for the Group’s hotels and residences, including brochures, campaigns, packaging, signage and trade show displays.\n\nManagement of the full production process, from concept to print, alongside the creation of digital assets and collaboration with the IT team on internal platforms.",
-      IT: "Progettazione e produzione di materiali di brand e comunicazione per hotel e residenze del Gruppo, inclusi brochure, campagne, packaging, segnaletica e allestimenti fieristici.\n\nGestione dell’intero processo produttivo, dal concept alla stampa, insieme alla creazione di asset digitali e alla collaborazione con il team IT sulle piattaforme interne."
+      EN: "Lead design and production of brand and editorial communication systems for a hospitality group.\nManaged the full process from concept to print, ensuring consistency across properties, formats and materials.\nCoordinated internal teams, external suppliers and digital workflows, integrating print and digital assets.",
+      IT: "Responsabile della progettazione e produzione di sistemi di comunicazione brand ed editoriali per un gruppo hospitality.\nGestione dell’intero processo, dal concept alla stampa, garantendo coerenza tra strutture, formati e materiali.\nCoordinamento di team interni, fornitori esterni e flussi digitali, integrando asset print e digital."
     }
   },
   {
@@ -89,8 +89,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Graphic team leader",
     company: "Wishdays S.r.l.",
     description: {
-      EN: "Coordination of the in-house design team and management of seasonal workloads. Design of POP materials, packaging and retail displays, with external agency coordination for brand and packaging restyling projects. Development of brand guidelines for multiple brands and implementation of automated layout workflows (XML), including management of design and photo archives.",
-      IT: "Coordinamento del team di design interno e gestione dei carichi di lavoro stagionali. Progettazione di materiali POP, packaging ed espositori retail, con coordinamento di agenzie esterne per progetti di restyling del brand e del packaging. Sviluppo di linee guida di brand per diversi marchi e implementazione di flussi di impaginazione automatizzati (XML), inclusa la gestione degli archivi di design e fotografici."
+      EN: "Led the in-house design team, managing workflows, priorities and seasonal production cycles.\nDesigned retail and packaging materials, coordinating with external agencies for brand consistency.\nDeveloped multi-brand visual systems and implemented automated layout workflows and asset management.",
+      IT: "Coordinamento del team grafico interno, gestione dei flussi di lavoro, priorità e cicli produttivi stagionali.\nProgettazione di materiali retail e packaging, con coordinamento di agenzie esterne per garantire coerenza di brand.\nSviluppo di sistemi visivi multi-brand e implementazione di workflow automatizzati per layout e gestione degli asset."
     }
   },
   {
@@ -98,8 +98,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Graphic Designer",
     company: "Total Quality Food S.r.l.",
     description: {
-      EN: "Graphic and regulatory support for food labeling in compliance with EU Regulation 1169, including the design of compliant layouts for packaging and informational materials. Development of commercial materials and graphic support for trade shows, conferences, and events.",
-      IT: "Supporto grafico e normativo per l’etichettatura alimentare in conformità al Regolamento UE 1169, con progettazione di layout per packaging e materiali informativi. Realizzazione di materiali commerciali e supporto grafico per fiere, convegni ed eventi."
+      EN: "Designed packaging and communication materials in compliance with EU regulations.\nBalanced regulatory requirements with clear and effective visual communication.\nSupported trade shows and promotional materials across different product lines.",
+      IT: "Progettazione di packaging e materiali di comunicazione in conformità alle normative europee.\nIntegrazione dei requisiti normativi con una comunicazione visiva chiara ed efficace.\nSupporto a fiere ed eventi promozionali per diverse linee di prodotto."
     }
   },
   {
@@ -107,8 +107,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Account Gruppo Pam & Graphic Designer",
     company: "Verba DDB S.r.l",
     description: {
-      EN: "Management of large retail clients including PAM Group and Panorama, overseeing the design and layout of promotional materials, flyers, POP displays and in-store signage. Coordination between clients, agencies and suppliers, alongside the development of advertising and retail communication materials for Bata Footwear.",
-      IT: "Gestione di grandi clienti della GDO, tra cui Gruppo PAM e Panorama, supervisionando la progettazione e l’impaginazione di materiali promozionali, volantini, espositori POP e segnaletica in-store. Coordinamento tra clienti, agenzie e fornitori, insieme allo sviluppo di materiali pubblicitari e di comunicazione retail per Bata Footwear."
+      EN: "Managed retail communication projects for large-scale clients (PAM Group, Panorama), across campaigns, in-store materials and visual assets.\nCoordinated clients, agencies and suppliers, ensuring consistency and alignment across multiple touchpoints.\nDeveloped visual solutions for advertising, retail environments and promotional materials.",
+      IT: "Gestione di progetti di comunicazione retail per clienti su larga scala (Gruppo PAM, Panorama), tra campagne, materiali in-store e asset visivi.\nCoordinamento tra clienti, agenzie e fornitori, garantendo coerenza e allineamento tra i diversi touchpoint.\nSviluppo di soluzioni visive per advertising, ambienti retail e materiali promozionali."
     }
   },
   {
@@ -125,8 +125,8 @@ export const EXPERIENCE: Experience[] = [
     role: "Founder and Co-owner",
     company: "Pressart S.r.l.",
     description: {
-      EN: "Co-founded a creative agency specialized in branding and printed communication. Developed visual identities, editorial design and packaging for a range of businesses, combining strategic thinking with high-quality print production.",
-      IT: "Co-fondatrice di un’agenzia creativa specializzata in branding e comunicazione stampata. Sviluppo di identità visive, progetti editoriali e packaging per diverse aziende, combinando pensiero strategico e produzione di stampa di alta qualità."
+      EN: "Co-founded a creative agency focused on branding and printed communication.\nDeveloped visual identities, editorial systems and packaging projects for a range of clients.\nCombined strategic design thinking with production expertise, delivering cohesive and high-quality outputs.",
+      IT: "Co-fondatore di un’agenzia creativa specializzata in branding e comunicazione stampata.\nSviluppo di identità visive, sistemi editoriali e progetti di packaging per diversi clienti.\nIntegrazione tra progettazione strategica e competenze produttive, con output coerenti e di alta qualità."
     }
   }
 ];
