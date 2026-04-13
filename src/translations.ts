@@ -20,6 +20,7 @@ export const TRANSLATIONS = {
       title: 'EXPERIENCE',
       subtitle: 'PROFESSIONAL EXPERIENCE',
       scroll: 'SCROLL FOR CAPABILITIES',
+      projects: 'PROJECTS',
     },
     capabilities: {
       title: 'CAPABILITIES',
@@ -95,6 +96,7 @@ export const TRANSLATIONS = {
       title: 'ESPERIENZA',
       subtitle: 'ESPERIENZE PROFESSIONALI',
       scroll: 'SCORRI PER LE COMPETENZE',
+      projects: 'PROGETTI',
     },
     capabilities: {
       title: 'COMPETENZE',

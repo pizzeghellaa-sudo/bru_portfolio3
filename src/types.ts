@@ -8,6 +8,7 @@ export interface Experience {
     EN: string;
     IT: string;
   };
+  projects?: { name: string; slug: string }[];
 }
 
 export interface StorySection {
@@ -71,9 +72,10 @@ export const EXPERIENCE: Experience[] = [
     role: "Freelance",
     company: "Self employed",
     description: {
-      EN: "Brand identity and visual systems for hospitality, cultural and commercial clients. Focus on structured design, scalable applications and consistency across touchpoints. Continuous development through advanced training and AI-driven workflows.",
-      IT: "Brand identity e sistemi visivi per clienti nei settori hospitality, culturale e commerciale. Focus su progettazione strutturata, applicazioni scalabili e coerenza tra i diversi touchpoint. Aggiornamento continuo attraverso formazione avanzata e integrazione di workflow basati su AI."
-    }
+      EN: "Brand identity and visual systems for hospitality, cultural and commercial clients.\nFocus on structured design, scalable applications and consistency across touchpoints.\nContinuous development through advanced training and AI-driven workflows.",
+      IT: "Brand identity e sistemi visivi per clienti nei settori hospitality, culturale e commerciale.\nFocus su progettazione strutturata, applicazioni scalabili e coerenza tra i diversi touchpoint.\nAggiornamento continuo attraverso formazione avanzata e integrazione di workflow basati su AI."
+    },
+    projects: [{ name: "Kalika", slug: "kalika-skincare" }]
   },
   {
     period: "2017 — 2024",
@@ -82,7 +84,8 @@ export const EXPERIENCE: Experience[] = [
     description: {
       EN: "Lead design and production of brand and editorial communication systems for a hospitality group.\nManaged the full process from concept to print, ensuring consistency across properties, formats and materials.\nCoordinated internal teams, external suppliers and digital workflows, integrating print and digital assets.",
       IT: "Responsabile della progettazione e produzione di sistemi di comunicazione brand ed editoriali per un gruppo hospitality.\nGestione dell’intero processo, dal concept alla stampa, garantendo coerenza tra strutture, formati e materiali.\nCoordinamento di team interni, fornitori esterni e flussi digitali, integrando asset print e digital."
-    }
+    },
+    projects: [{ name: "Europlan", slug: "europlan" }, { name: "Hotel Caesius", slug: "hotel-caesius" }]
   },
   {
     period: "2014 — 2016",
@@ -91,7 +94,8 @@ export const EXPERIENCE: Experience[] = [
     description: {
       EN: "Led the in-house design team, managing workflows, priorities and seasonal production cycles.\nDesigned retail and packaging materials, coordinating with external agencies for brand consistency.\nDeveloped multi-brand visual systems and implemented automated layout workflows and asset management.",
       IT: "Coordinamento del team grafico interno, gestione dei flussi di lavoro, priorità e cicli produttivi stagionali.\nProgettazione di materiali retail e packaging, con coordinamento di agenzie esterne per garantire coerenza di brand.\nSviluppo di sistemi visivi multi-brand e implementazione di workflow automatizzati per layout e gestione degli asset."
-    }
+    },
+    projects: [{ name: "Emozione3", slug: "emozione3" }]
   },
   {
     period: "2012 — 2013",
@@ -109,16 +113,18 @@ export const EXPERIENCE: Experience[] = [
     description: {
       EN: "Managed retail communication projects for large-scale clients (PAM Group, Panorama), across campaigns, in-store materials and visual assets.\nCoordinated clients, agencies and suppliers, ensuring consistency and alignment across multiple touchpoints.\nDeveloped visual solutions for advertising, retail environments and promotional materials.",
       IT: "Gestione di progetti di comunicazione retail per clienti su larga scala (Gruppo PAM, Panorama), tra campagne, materiali in-store e asset visivi.\nCoordinamento tra clienti, agenzie e fornitori, garantendo coerenza e allineamento tra i diversi touchpoint.\nSviluppo di soluzioni visive per advertising, ambienti retail e materiali promozionali."
-    }
+    },
+    projects: [{ name: "PAM-Panorama", slug: "pam-panorama" }]
   },
   {
     period: "2003 — 2005",
     role: "Professional and Freelance Collaboration",
     company: "Self employed",
     description: {
-      EN: "Editorial design, multilingual layout, technical manuals, promotional materials, and static website design. Collaborations with publishing houses, communication agencies, software companies, and professional training institutes.",
-      IT: "Grafica editoriale, impaginazioni multilingua, manualistica tecnica, materiali promozionali e realizzazione di siti web statici. Collaborazioni con case editrici, agenzie di comunicazione, software house e istituti professionali."
-    }
+      EN: "Editorial design, multilingual layout, technical manuals, promotional materials and static website design.\nCollaborations with publishing houses, communication agencies, software companies and professional training institutes.",
+      IT: "Grafica editoriale, impaginazioni multilingua, manualistica tecnica, materiali promozionali e siti web statici.\nCollaborazioni con case editrici, agenzie di comunicazione, software house e istituti professionali."
+    },
+    projects: [{ name: "Il Marmo", slug: "il-marmo" }]
   },
   {
     period: "1995 — 2002",

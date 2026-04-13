@@ -49,14 +49,15 @@ export default function WorkSection() {
         jsonLd={jsonLd}
       />
       <div className="flex flex-col gap-24">
-      <header className="flex flex-col md:flex-row justify-between items-baseline gap-8">
-        <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-ink uppercase"
-                    style={{ color: 'rgb(179, 178, 178)' }}>
+      <header className="flex flex-col md:flex-row justify-between items-start gap-8">
+        <div>
+          <h2 className="text-6xl md:text-8xl font-black tracking-tighter uppercase"
+              style={{ color: 'rgb(179, 178, 178)' }}>
             {t.title}
-
-            <div className="w-24 h-1 bg-primary mt-8" />
-              <p className="mt-4 font-mono text-primary text-sm tracking-widest uppercase">{t.subtitle}</p>
-        </h2>
+          </h2>
+          <div className="w-24 h-1 bg-primary mt-8" />
+          <p className="mt-4 font-mono text-primary text-sm tracking-widest uppercase">{t.subtitle}</p>
+        </div>
 
         <nav className="flex gap-6">
           {filters.map((f) => (

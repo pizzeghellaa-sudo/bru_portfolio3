@@ -1,4 +1,4 @@
-import { useOutletContext, useLocation, useParams } from 'react-router-dom';
+import { useOutletContext, useLocation, useParams, Link } from 'react-router-dom';
 import { EXPERIENCE } from '../types';
 import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
@@ -33,38 +33,87 @@ export default function TimelineSection() {
         lang={langSegment}
         jsonLd={jsonLd}
       />
-      <div className="flex flex-col gap-24">
-      <header>
-        <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-ink uppercase"
-            style={{ color: 'rgb(179, 178, 178)' }}>
+      <div className="flex flex-col gap-16">
+        {/* Header */}
+        <header>
+          <h2
+            className="text-6xl md:text-8xl font-black tracking-tighter uppercase"
+            style={{ color: 'rgb(179, 178, 178)' }}
+          >
             {t.title}
-        </h2>
+          </h2>
+          <p className="mt-3 font-mono text-primary text-sm tracking-widest uppercase">
+            {t.subtitle}
+          </p>
+        </header>
 
-        <div className="w-24 h-1 bg-primary mt-8" />
-        <p className="mt-4 font-mono text-primary text-sm tracking-widest uppercase">{t.subtitle}</p>
-      </header>
+        {/* Timeline entries */}
+        <div className="border-t border-[#E6E8EC]">
+          {EXPERIENCE.map((exp, i) => {
+            const isSelfEmployed = exp.company === 'Self employed';
+            return (
+              <div
+                key={i}
+                className="grid grid-cols-1 md:grid-cols-[120px_320px_1fr] gap-x-8 py-10 border-b border-[#E6E8EC]"
+              >
+                {/* Column 1: Date */}
+                <div className="font-mono text-xs tracking-[0.08em] text-[#9AA3B2] mb-3 md:mb-0 pt-0.5">
+                  {exp.period}
+                </div>
 
-      <div className="flex flex-col border-t border-ink/10">
-        {EXPERIENCE.map((exp, i) => (
-          <div key={i} className="grid grid-cols-1 md:grid-cols-12 py-12 border-b border-ink/10 group hover:bg-ink/[0.02] transition-colors">
-            <div className="col-span-1 md:col-span-3 font-mono text-sm text-slate-400 mb-4 md:mb-0">
-              {exp.period}
-            </div>
-            <div className="col-span-1 md:col-span-4">
-              <h3 className="text-2xl font-bold tracking-tight text-ink">
-                {exp.role} / <span className="text-slate-500">{exp.company}</span>
-              </h3>
-            </div>
-            <div className="col-span-1 md:col-span-5 mt-4 md:mt-0">
-              <p className="text-lg text-slate-600 leading-relaxed relative pl-6">
-                <span className="absolute left-0 top-0 text-primary font-mono text-xs">[+]</span>
-                {exp.description[language]}
-              </p>
-            </div>
-          </div>
-        ))}
+                {/* Column 2: Role */}
+                <div className="mb-6 md:mb-0">
+                  {isSelfEmployed ? (
+                    <h3 className="text-[18px] font-bold uppercase tracking-tight text-[#111]">
+                      {exp.role}
+                    </h3>
+                  ) : (
+                    <h3 className="text-[18px] font-bold uppercase tracking-tight text-[#111]">
+                      {exp.role}
+                      <span className="font-semibold normal-case text-[#6E819C]"> — {exp.company}</span>
+                    </h3>
+                  )}
+                </div>
+
+                {/* Column 3: Content */}
+                <div className="flex flex-col">
+                  {/* Active language description */}
+                  <p
+                    className="text-[15px] leading-[1.6] whitespace-pre-line"
+                    style={{ color: '#5E6B7A' }}
+                  >
+                    {exp.description[language]}
+                  </p>
+
+                  {/* Projects */}
+                  {exp.projects && exp.projects.length > 0 && (
+                    <div className="mt-5">
+                      <span
+                        className="block text-[11px] uppercase tracking-[0.12em] mb-2"
+                        style={{ color: '#9AA3B2' }}
+                      >
+                        {t.projects}
+                      </span>
+                      <div className="flex flex-wrap gap-x-5 gap-y-1">
+                        {exp.projects.map((proj) => (
+                          <Link
+                            key={proj.slug}
+                            to={`/${lang}/selected-works/${proj.slug}`}
+                            className="group inline-flex items-center gap-1 text-sm font-medium text-[#111] hover:text-primary transition-colors"
+                          >
+                            {proj.name}
+                            <span className="text-primary transition-transform duration-150 group-hover:translate-x-0.5 inline-block">↗</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-     </div>
     </>
   );
 }
