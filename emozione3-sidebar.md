@@ -1,0 +1,128 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - heading "BRU BULGARELLI PORTFOLIO 2026" [level=1] [ref=e7]:
+        - text: BRU BULGARELLI
+        - generic [ref=e8]: PORTFOLIO 2026
+      - navigation [ref=e9]:
+        - link "INDEX" [ref=e10] [cursor=pointer]:
+          - /url: /en/
+          - text: INDEX
+        - link "EXPERIENCE" [ref=e11] [cursor=pointer]:
+          - /url: /en/experience
+          - text: EXPERIENCE
+        - link "CAPABILITIES" [ref=e12] [cursor=pointer]:
+          - /url: /en/capabilities
+          - text: CAPABILITIES
+        - link "SELECTED WORKS" [ref=e13] [cursor=pointer]:
+          - /url: /en/selected-works
+          - text: SELECTED WORKS
+        - link "CONTACTS" [ref=e15] [cursor=pointer]:
+          - /url: /en/contact
+          - text: CONTACTS
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: The work presented in this portfolio was carried out during the collaboration with the indicated company, and is shown exclusively for the purpose of demonstrating professional skills. All rights relating to the projects belong to their respective owners.
+      - generic [ref=e18]:
+        - button "EN" [ref=e19]
+        - button "IT" [ref=e20]
+      - paragraph [ref=e21]:
+        - text: VALEGGIO SUL MINCIO, IT
+        - text: 10:22:24 CEST
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - button "← BACK TO MY WORK" [ref=e26]:
+          - generic [ref=e27]: ←
+          - text: BACK TO MY WORK
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - heading "Emozione3" [level=2] [ref=e30]
+            - paragraph [ref=e31]: BRAND & RETAIL SYSTEM
+          - generic [ref=e32]: YEAR — 2016
+      - generic [ref=e34]:
+        - complementary [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: B1 / CONTEXT
+            - paragraph [ref=e38]: Emozione3 required a structured brand system to support growth and ensure consistency across retail and communication channels. The challenge was to define a clear visual language and translate it into adaptable applications across multiple environments and formats.
+          - generic [ref=e39]:
+            - generic [ref=e40]: B2 / ROLE
+            - list [ref=e41]:
+              - listitem [ref=e42]:
+                - generic [ref=e44]: BRAND DESIGN
+              - listitem [ref=e45]:
+                - generic [ref=e47]: VISUAL SYSTEMS
+              - listitem [ref=e48]:
+                - generic [ref=e50]: RETAIL DESIGN
+          - generic [ref=e51]:
+            - generic [ref=e52]: B3 / STACK
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: BRAND
+                - list [ref=e56]
+              - generic [ref=e60]:
+                - generic [ref=e61]: SYSTEM
+                - list [ref=e62]
+              - generic [ref=e66]:
+                - generic [ref=e67]: APPLICATIONS
+                - list [ref=e68]
+              - generic [ref=e72]:
+                - generic [ref=e73]: TOUCHPOINTS
+                - list [ref=e74]
+              - generic [ref=e78]:
+                - generic [ref=e79]: PRODUCTION
+                - list [ref=e80]
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - generic [ref=e86]:
+              - generic [ref=e87]: "01"
+              - heading "STRATEGY" [level=4] [ref=e88]
+              - paragraph [ref=e89]: Defined brand positioning, tone of voice and visual direction. Established a coherent framework to ensure alignment across retail environments and communication touchpoints.
+            - img "Emozione3 01" [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]: SYSTEM OVERVIEW
+            - img "SYSTEM OVERVIEW" [ref=e95]
+            - paragraph [ref=e96]: A modular system connecting identity, guidelines and applications across retail environments.
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - generic [ref=e99]: 02 & 03
+              - heading "BRAND SYSTEM & GUIDELINES" [level=4] [ref=e100]
+              - paragraph [ref=e101]: Developed a modular identity system supported by structured guidelines to ensure consistency across formats, teams and applications. The system defines clear rules for typography, color, composition and logo usage, enabling controlled and scalable implementation.
+            - generic [ref=e102]:
+              - img "Emozione3 02 & 03" [ref=e104]
+              - img "Emozione3 02 & 03" [ref=e106]
+              - img "Emozione3 02 & 03" [ref=e142]
+          - generic [ref=e108]:
+            - img "Emozione3" [ref=e144]
+            - generic [ref=e111]:
+              - heading "FROM IDENTITY TO APPLICATION" [level=4] [ref=e112]
+              - paragraph [ref=e113]: The project evolved from a visual identity into a complete system connecting brand expression with real-world applications. Guidelines act as a bridge between design intent and execution, ensuring continuity across communication and retail environments.
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: "04"
+              - heading "APPLICATION SYSTEM" [level=4] [ref=e117]
+              - paragraph [ref=e118]: Translated the identity into a flexible system of communication and retail assets, designed to adapt across formats and contexts. Applications follow a modular logic, allowing consistent deployment across campaigns, materials and physical touchpoints.
+            - generic [ref=e145]:
+              - img "Emozione3 04" [ref=e147]
+              - img "Emozione3 04" [ref=e149]
+              - img "Emozione3 04" [ref=e151]
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: "05"
+              - heading "RETAIL EXECUTION" [level=4] [ref=e122]
+              - paragraph [ref=e123]: Designed retail display systems tailored to different store environments, balancing brand consistency with spatial and commercial constraints. The system ensures clear visual hierarchy and strong brand presence across in-store installations.
+            - img "Emozione3 05" [ref=e152]
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: "06"
+              - heading "SCALING & CONSISTENCY" [level=4] [ref=e128]
+              - paragraph [ref=e129]: Enabled consistent rollout across multiple locations through a structured and modular design system. The framework supports both permanent installations and seasonal updates while maintaining visual coherence.
+            - img "Emozione3 06" [ref=e153]
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - heading "VISUAL SYSTEM PRINCIPLES" [level=4] [ref=e135]
+                - paragraph [ref=e136]: Consistency over decoration. Modular and scalable components. High legibility in retail contexts. Adaptability across formats. Clear visual hierarchy.
+              - img "Emozione3" [ref=e155]
+            - generic [ref=e138]:
+              - heading "OUTCOME" [level=4] [ref=e140]
+              - paragraph [ref=e141]: A unified brand system connecting identity, communication and retail environments. The project improves consistency, simplifies implementation and supports scalable brand deployment across multiple contexts.

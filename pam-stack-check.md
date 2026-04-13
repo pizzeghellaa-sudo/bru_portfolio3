@@ -1,0 +1,116 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - heading "BRU BULGARELLI PORTFOLIO 2026" [level=1] [ref=e7]:
+        - text: BRU BULGARELLI
+        - generic [ref=e8]: PORTFOLIO 2026
+      - navigation [ref=e9]:
+        - link "INDEX" [ref=e10] [cursor=pointer]:
+          - /url: /en/
+          - text: INDEX
+        - link "EXPERIENCE" [ref=e11] [cursor=pointer]:
+          - /url: /en/experience
+          - text: EXPERIENCE
+        - link "CAPABILITIES" [ref=e12] [cursor=pointer]:
+          - /url: /en/capabilities
+          - text: CAPABILITIES
+        - link "SELECTED WORKS" [ref=e13] [cursor=pointer]:
+          - /url: /en/selected-works
+          - text: SELECTED WORKS
+        - link "CONTACTS" [ref=e15] [cursor=pointer]:
+          - /url: /en/contact
+          - text: CONTACTS
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: The work presented in this portfolio was carried out during the collaboration with the indicated company, and is shown exclusively for the purpose of demonstrating professional skills. All rights relating to the projects belong to their respective owners.
+      - generic [ref=e18]:
+        - button "EN" [ref=e19]
+        - button "IT" [ref=e20]
+      - paragraph [ref=e21]:
+        - text: VALEGGIO SUL MINCIO, IT
+        - text: 10:23:48 CEST
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - button "← BACK TO MY WORK" [ref=e26]:
+          - generic [ref=e27]: ←
+          - text: BACK TO MY WORK
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - heading "PAM-Panorama" [level=2] [ref=e30]
+            - paragraph [ref=e31]: RETAIL COMMUNICATION SYSTEM
+          - generic [ref=e32]: YEAR — 2010
+      - generic [ref=e34]:
+        - complementary [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: B1 / CONTEXT
+            - paragraph [ref=e38]: Retail communication work developed at Verba DDB for clients Pam and Panorama. The project focused on connecting campaigns, visual assets and in-store materials across multiple touchpoints.
+          - generic [ref=e39]:
+            - generic [ref=e40]: B2 / ROLE
+            - list [ref=e41]:
+              - listitem [ref=e42]:
+                - generic [ref=e44]: VISUAL DESIGN
+              - listitem [ref=e45]:
+                - generic [ref=e47]: RETAIL COMMUNICATION
+              - listitem [ref=e48]:
+                - generic [ref=e50]: ART DIRECTION
+          - generic [ref=e51]:
+            - generic [ref=e52]: B3 / STACK
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - generic [ref=e55]: COMMUNICATION
+                - list [ref=e56]
+              - generic [ref=e60]:
+                - generic [ref=e61]: SYSTEM
+                - list [ref=e62]
+              - generic [ref=e66]:
+                - generic [ref=e67]: PRODUCTION
+                - list [ref=e68]
+              - generic [ref=e72]:
+                - generic [ref=e73]: COORDINATION
+                - list [ref=e74]
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]: "01"
+              - heading "STRATEGY & COORDINATION" [level=4] [ref=e82]
+              - paragraph [ref=e83]: Managed communication between client, agency and production teams, aligning campaign objectives with visual direction and retail constraints. Established the operational framework for consistent execution across touchpoints.
+            - img "PAM-Panorama 01" [ref=e85]
+          - generic [ref=e86]:
+            - generic [ref=e87]: SYSTEM OVERVIEW
+            - img "SYSTEM OVERVIEW" [ref=e89]
+            - paragraph [ref=e90]: A modular communication system connecting campaign logic, visual assets and retail execution.
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: 02 & 03
+              - heading "CONTENT & SYSTEM" [level=4] [ref=e94]
+              - paragraph [ref=e95]: Developed visual assets and translated campaign concepts into adaptable communication systems across multiple formats, ensuring consistency between print, promotional and in-store materials.
+            - generic [ref=e96]:
+              - img "PAM-Panorama 02 & 03" [ref=e98]
+              - img "PAM-Panorama 02 & 03" [ref=e100]
+          - generic [ref=e101]:
+            - img "PAM-Panorama" [ref=e136]
+            - generic [ref=e104]:
+              - heading "FROM CAMPAIGN TO STORE" [level=4] [ref=e105]
+              - paragraph [ref=e106]: A continuous system connecting campaign design, content production and in-store execution, ensuring coherence across all customer touchpoints.
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - generic [ref=e109]: "04"
+              - heading "RETAIL APPLICATIONS" [level=4] [ref=e110]
+              - paragraph [ref=e111]: Applied the communication system to retail environments through displays, signage and promotional materials adapted to different store layouts and customer interactions.
+            - img "PAM-Panorama 04" [ref=e137]
+          - generic [ref=e113]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: "05"
+              - heading "IMPLEMENTATION" [level=4] [ref=e117]
+              - paragraph [ref=e118]: Delivered campaign materials across multiple locations, adapting designs to production requirements and ensuring consistency across formats and environments.
+            - generic [ref=e120]:
+              - generic [ref=e121]: "06"
+              - heading "SCALING & CONSISTENCY" [level=4] [ref=e122]
+              - paragraph [ref=e123]: Supported ongoing campaign rollout and in-store updates, maintaining visual coherence across seasonal changes and different retail contexts.
+          - generic [ref=e124]:
+            - generic [ref=e126]:
+              - heading "VISUAL SYSTEM PRINCIPLES" [level=4] [ref=e128]
+              - paragraph [ref=e129]: Consistency across touchpoints. Adaptability to retail environments. Clarity in promotional communication. Integration between campaign and store.
+            - generic [ref=e131]:
+              - heading "OUTCOME" [level=4] [ref=e133]
+              - paragraph [ref=e134]: A cohesive retail communication system connecting campaign design, visual assets and in-store execution. The work ensured consistency across formats and improved coordination between teams and production.

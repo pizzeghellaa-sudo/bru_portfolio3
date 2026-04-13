@@ -1,0 +1,107 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - heading "BRU BULGARELLI PORTFOLIO 2026" [level=1] [ref=e7]:
+        - text: BRU BULGARELLI
+        - generic [ref=e8]: PORTFOLIO 2026
+      - navigation [ref=e9]:
+        - link "INDICE" [ref=e10] [cursor=pointer]:
+          - /url: /it/
+          - text: INDICE
+        - link "ESPERIENZA" [ref=e11] [cursor=pointer]:
+          - /url: /it/experience
+          - text: ESPERIENZA
+        - link "COMPETENZE" [ref=e12] [cursor=pointer]:
+          - /url: /it/capabilities
+          - text: COMPETENZE
+        - link "LAVORI SELEZIONATI" [ref=e13] [cursor=pointer]:
+          - /url: /it/selected-works
+          - text: LAVORI SELEZIONATI
+        - link "CONTATTI" [ref=e15] [cursor=pointer]:
+          - /url: /it/contact
+          - text: CONTATTI
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: Il lavoro presentato in questo portfolio, realizzato durante la collaborazione con l'azienda indicata, è mostrato esclusivamente per dimostrare le competenze professionali acquisite. I diritti appartengono ai rispettivi clienti, ove applicabile.
+      - generic [ref=e18]:
+        - button "EN" [ref=e19]
+        - button "IT" [ref=e20]
+      - paragraph [ref=e21]:
+        - text: VALEGGIO SUL MINCIO, IT
+        - text: 10:18:20 CEST
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - button "← TORNA ALL'ARCHIVIO" [ref=e26]:
+          - generic [ref=e27]: ←
+          - text: TORNA ALL'ARCHIVIO
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - heading "Il Marmo" [level=2] [ref=e30]
+            - paragraph [ref=e31]: SISTEMA EDITORIALE PER LA CULTURA DEL MATERIALE
+          - generic [ref=e32]: ANNO — 2004
+      - generic [ref=e34]:
+        - complementary [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: B1 / CONTESTO
+            - paragraph [ref=e38]: Il Marmo è un progetto editoriale che esplora la relazione tra materiale, architettura e cultura visiva. La pubblicazione traduce le qualità fisiche del marmo in una narrazione visiva strutturata, bilanciando immagine, tipografia e ritmo spaziale.
+          - generic [ref=e39]:
+            - generic [ref=e40]: B2 / RUOLO
+            - list [ref=e41]:
+              - listitem [ref=e42]
+              - listitem [ref=e45]
+              - listitem [ref=e48]
+              - listitem [ref=e51]
+          - generic [ref=e54]:
+            - generic [ref=e55]: B3 / STACK
+            - generic [ref=e56]:
+              - generic [ref=e57]
+              - generic [ref=e62]
+              - generic [ref=e67]
+              - generic [ref=e72]
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: "01"
+              - heading "IDEAZIONE" [level=4] [ref=e81]
+              - paragraph [ref=e82]: Il progetto esplora come le qualità del materiale possano essere tradotte in forma editoriale. Il marmo non è solo un soggetto ma un linguaggio visivo, capace di guidare composizione, contrasto e ritmo lungo tutta la pubblicazione.
+            - img "Il Marmo 01" [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]: SISTEMA EDITORIALE
+            - img "SISTEMA EDITORIALE" [ref=e88]
+            - paragraph [ref=e89]: Una struttura editoriale modulare che connette immagini del materiale, gerarchia tipografica e ritmo spaziale in un sistema di pubblicazione coeso.
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]: "02"
+              - heading "STRUTTURA" [level=4] [ref=e93]
+              - paragraph [ref=e94]: È stato sviluppato un sistema editoriale modulare per organizzare i contenuti su diverse tipologie di pagina. I layout definiscono un equilibrio tra immagini al vivo, blocchi di testo strutturati e composizioni miste, stabilendo una griglia coerente in tutta la pubblicazione.
+            - generic [ref=e95]:
+              - img "Il Marmo 02" [ref=e97]
+              - img "Il Marmo 02" [ref=e99]
+              - img "Il Marmo 02" [ref=e101]
+          - generic [ref=e102]:
+            - img "Il Marmo" [ref=e105]
+            - generic [ref=e107]:
+              - heading "DAL MATERIALE ALLA FORMA" [level=4] [ref=e108]
+              - paragraph [ref=e109]: La pubblicazione colma la distanza tra materia grezza e oggetto finito. La documentazione del processo diventa narrazione visiva, connettendo la fisicità della pietra con la precisione della composizione editoriale.
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: "03"
+              - heading "LINGUAGGIO VISIVO" [level=4] [ref=e113]
+              - paragraph [ref=e114]: Il linguaggio visivo si fonda sul contrasto tra texture e spazio architettonico. La fotografia in bianco e nero enfatizza la profondità del materiale, mentre una tipografia misurata supporta chiarezza e ritmo. Il risultato è una pubblicazione che appare al contempo tattile e architettonica.
+            - generic [ref=e115]:
+              - img "Il Marmo 03" [ref=e117]
+              - img "Il Marmo 03" [ref=e119]
+              - img "Il Marmo 03" [ref=e121]
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]: "04"
+              - heading "RITMO EDITORIALE" [level=4] [ref=e125]
+              - paragraph [ref=e126]: La sequenza delle pagine alterna immagini dense e contenuti strutturati, creando un ritmo di lettura controllato. Questo ritmo rafforza la percezione del materiale, alternando momenti di immersione visiva e chiarezza informativa.
+            - img "Il Marmo 04" [ref=e128]
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]
+              - img "Il Marmo" [ref=e136]
+            - generic [ref=e138]:
+              - heading "RISULTATO" [level=4] [ref=e140]
+              - paragraph [ref=e141]: Un sistema editoriale coeso in cui materiale, layout e tipografia collaborano per creare una narrazione visiva coerente. Una pubblicazione progettata per comunicare la cultura del materiale attraverso struttura e ritmo.

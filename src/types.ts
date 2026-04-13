@@ -158,12 +158,14 @@ export const PROJECTS: Project[] = [
         EN: "Emozione3 required a structured brand system to support growth and ensure consistency across retail and communication channels. The challenge was to define a clear visual language and translate it into adaptable applications across multiple environments and formats.",
         IT: "Emozione3 richiedeva un sistema di brand strutturato per supportare la crescita e garantire coerenza su tutti i canali retail e di comunicazione. La sfida era definire un linguaggio visivo chiaro e tradurlo in applicazioni adattabili su più ambienti e formati."
       },
-      roles: ["BRAND DESIGN", "VISUAL SYSTEMS", "RETAIL DESIGN"],
-      stack: [
-        { label: "IDENTITY", value: "SYSTEM" },
-        { label: "BRAND", value: "GUIDELINES" },
-        { label: "RETAIL", value: "APPLICATIONS" },
-        { label: "COMMS", value: "ASSETS" }
+      roles: ["BRAND IDENTITY", "VISUAL SYSTEM", "RETAIL APPLICATIONS"],
+      stack: [],
+      stackGroups: [
+        { title: "BRAND", items: ["POSITIONING", "TONE OF VOICE", "IDENTITY"] },
+        { title: "SYSTEM", items: ["VISUAL SYSTEM", "GUIDELINES", "SCALABLE FRAMEWORK"] },
+        { title: "APPLICATIONS", items: ["PACKAGING", "PRINT", "DIGITAL"] },
+        { title: "TOUCHPOINTS", items: ["RETAIL", "COMMUNICATION", "MULTI-CHANNEL"] },
+        { title: "PRODUCTION", items: ["PRINT PRODUCTION", "PREPRESS", "SUPPLIER COORDINATION"] }
       ],
       sections: [
         {
@@ -259,148 +261,6 @@ export const PROJECTS: Project[] = [
       ]
     }
   },
-  {
-    id: "pam panorama",
-    slug: "pam-panorama",
-    title: "PAM-Panorama",
-    category: "PRINT/POP",
-    tags: ["PRINT/POP"],
-    image: projectThumb("pam-panorama"),
-    gallery: projectGallery("pam-panorama"),
-    description: {
-      EN: "Designed and coordinated retail communication across campaigns, in-store materials and promotional systems, ensuring consistency between brand, product and customer experience.",
-      IT: "Progettato e coordinato la comunicazione retail su campagne, materiali in-store e sistemi promozionali, garantendo coerenza tra brand, prodotto ed esperienza del cliente."
-    },
-    metaDescription: {
-      EN: "Retail communication system designed by Bru Bulgarelli for PAM and Panorama supermarkets — campaigns, in-store materials and promotional systems across multiple locations.",
-      IT: "Sistema di comunicazione retail di Bru Bulgarelli per i supermercati PAM e Panorama — campagne, materiali in-store e sistemi promozionali su più punti vendita."
-    },
-    meta: {
-      subtitle: {
-        EN: "RETAIL COMMUNICATION SYSTEM",
-        IT: "SISTEMA DI COMUNICAZIONE RETAIL"
-      },
-      year: "2010",
-      context: {
-        EN: "Retail communication work developed at Verba DDB for clients Pam and Panorama. The project focused on connecting campaigns, visual assets and in-store materials across multiple touchpoints.",
-        IT: "Lavoro di comunicazione retail sviluppato in Verba DDB per i clienti Pam e Panorama. Il progetto si è concentrato sul collegamento di campagne, asset visivi e materiali in-store su più touchpoint."
-      },
-      roles: ["VISUAL DESIGN", "RETAIL COMMUNICATION", "ART DIRECTION"],
-      stack: [
-        { label: "CAMPAIGNS", value: "MATERIALS" },
-        { label: "IN-STORE", value: "SYSTEMS" },
-        { label: "PHOTO", value: "PRODUCTION" },
-        { label: "PROMO", value: "ASSETS" }
-      ],
-      sections: [
-        {
-          number: "01",
-          title: { EN: "STRATEGY & COORDINATION", IT: "STRATEGIA E COORDINAMENTO" },
-          description: {
-            EN: "Managed communication between client, agency and production teams, aligning campaign objectives with visual direction and retail constraints. Established the operational framework for consistent execution across touchpoints.",
-            IT: "Gestita la comunicazione tra cliente, agenzia e team di produzione, allineando gli obiettivi di campagna con la direzione visiva e i vincoli retail. Stabilito il framework operativo per un’esecuzione coerente su tutti i touchpoint."
-          },
-          layout: "text-image",
-          galleryIndices: [0]
-        },
-        {
-          number: "",
-          title: { EN: "SYSTEM OVERVIEW", IT: "PANORAMICA DEL SISTEMA" },
-          description: {
-            EN: "A modular communication system connecting campaign logic, visual assets and retail execution.",
-            IT: "Un sistema di comunicazione modulare che connette logica di campagna, asset visivi ed esecuzione retail."
-          },
-          layout: "diagram",
-          galleryIndices: [5]
-        },
-        {
-          number: "02 & 03",
-          title: { EN: "CONTENT & SYSTEM", IT: "CONTENUTO E SISTEMA" },
-          description: {
-            EN: "Developed visual assets and translated campaign concepts into adaptable communication systems across multiple formats, ensuring consistency between print, promotional and in-store materials.",
-            IT: "Sviluppati asset visivi e tradotti i concetti di campagna in sistemi di comunicazione adattabili su più formati, garantendo coerenza tra materiali stampati, promozionali e in-store."
-          },
-          layout: "full-grid",
-          galleryIndices: [1, 2]
-        },
-        {
-          number: "",
-          title: { EN: "FROM CAMPAIGN TO STORE", IT: "DALLA CAMPAGNA AL PUNTO VENDITA" },
-          description: {
-            EN: "A continuous system connecting campaign design, content production and in-store execution, ensuring coherence across all customer touchpoints.",
-            IT: "Un sistema continuo che connette il design di campagna, la produzione di contenuti e l’esecuzione in-store, garantendo coerenza su tutti i touchpoint del cliente."
-          },
-          layout: "image-text",
-          galleryIndices: [3]
-        },
-        {
-          number: "04",
-          title: { EN: "RETAIL APPLICATIONS", IT: "APPLICAZIONI RETAIL" },
-          description: {
-            EN: "Applied the communication system to retail environments through displays, signage and promotional materials adapted to different store layouts and customer interactions.",
-            IT: "Applicato il sistema di comunicazione agli ambienti retail attraverso espositori, segnaletica e materiali promozionali adattati ai diversi layout dei punti vendita e alle interazioni con il cliente."
-          },
-          layout: "text-image",
-          galleryIndices: [4]
-        },
-        {
-          number: "05",
-          title: { EN: "IMPLEMENTATION", IT: "IMPLEMENTAZIONE" },
-          description: {
-            EN: "Delivered campaign materials across multiple locations, adapting designs to production requirements and ensuring consistency across formats and environments.",
-            IT: "Consegnati i materiali di campagna su più sedi, adattando i design ai requisiti di produzione e garantendo coerenza tra formati e ambienti."
-          },
-          layout: "half",
-          galleryIndices: []
-        },
-        {
-          number: "06",
-          title: { EN: "SCALING & CONSISTENCY", IT: "SCALABILITÀ E COERENZA" },
-          description: {
-            EN: "Supported ongoing campaign rollout and in-store updates, maintaining visual coherence across seasonal changes and different retail contexts.",
-            IT: "Supportato il rollout continuativo delle campagne e gli aggiornamenti in-store, mantenendo la coerenza visiva attraverso i cambiamenti stagionali e i diversi contesti retail."
-          },
-          layout: "half",
-          galleryIndices: []
-        },
-        {
-          number: "",
-          title: { EN: "VISUAL SYSTEM PRINCIPLES", IT: "PRINCIPI DEL SISTEMA VISIVO" },
-          description: {
-            EN: "Consistency across touchpoints. Adaptability to retail environments. Clarity in promotional communication. Integration between campaign and store.",
-            IT: "Coerenza su tutti i touchpoint. Adattabilità agli ambienti retail. Chiarezza nella comunicazione promozionale. Integrazione tra campagna e punto vendita."
-          },
-          layout: "half",
-          galleryIndices: []
-        },
-        {
-          number: "",
-          title: { EN: "OUTCOME", IT: "RISULTATO" },
-          description: {
-            EN: "A cohesive retail communication system connecting campaign design, visual assets and in-store execution. The work ensured consistency across formats and improved coordination between teams and production.",
-            IT: "Un sistema di comunicazione retail coeso che connette il design di campagna, gli asset visivi e l’esecuzione in-store. Il lavoro ha garantito coerenza tra formati e migliorato il coordinamento tra team e produzione."
-          },
-          layout: "half",
-          galleryIndices: []
-        }
-      ]
-    }
-  },
-  /*
-  {
-    id: "emozione3 pop",
-    slug: "emozione3-pop",
-    title: "Emozione3 Pop",
-    category: "PRINT/POP",
-    tags: ["PRINT/POP"],
-    image: projectThumb("emozione3-pop"),
-    gallery: projectGallery("emozione3-pop"),
-    description: {
-      EN: "Gift Boxes.\nDesign and development of POP materials for retail, with a focus on seasonal displays, co-marketing initiatives, and new product and bundle launches.\n\nProjects were delivered across various retail environments (shopping malls, bookstores, large-scale retail, travel agencies), adapting solutions and visual language to specific spaces and needs.\n\nFrom floor displays to coordinated communication materials (posters, leaflets, shelves, stoppers, counter displays, and backlit walls), a consistent and recognizable visual system was created.\n\nA valuable experience that allowed me to grow in diverse, fast-paced environments, with direct visibility of results at the point of sale.",
-      IT: "Cofanetti regalo.\nProgettazione e sviluppo di materiali POP per il punto vendita, con focus su allestimenti stagionali, co-marketing e lanci di nuovi prodotti e bundle.\n\nI progetti sono stati realizzati in diversi contesti retail (centri commerciali, librerie, GDO, agenzie viaggio), adattando soluzioni e linguaggi agli spazi e alle esigenze specifiche.\n\nDagli espositori da terra ai materiali coordinati (locandine, leaflet, mensole, stopper, espositori da banco e wall retroilluminati), è stato costruito un sistema visivo coerente e riconoscibile.\n\nUn’esperienza formativa che mi ha permesso di crescere in contesti diversi e ad alto ritmo, con un riscontro diretto sul punto vendita."
-    }
-  },
-  */ 
   {
     id: "europlan",
     slug: "europlan",
@@ -525,6 +385,149 @@ export const PROJECTS: Project[] = [
       ]
     }
   },
+  /*
+  {
+    id: "emozione3 pop",
+    slug: "emozione3-pop",
+    title: "Emozione3 Pop",
+    category: "PRINT/POP",
+    tags: ["PRINT/POP"],
+    image: projectThumb("emozione3-pop"),
+    gallery: projectGallery("emozione3-pop"),
+    description: {
+      EN: "Gift Boxes.\nDesign and development of POP materials for retail, with a focus on seasonal displays, co-marketing initiatives, and new product and bundle launches.\n\nProjects were delivered across various retail environments (shopping malls, bookstores, large-scale retail, travel agencies), adapting solutions and visual language to specific spaces and needs.\n\nFrom floor displays to coordinated communication materials (posters, leaflets, shelves, stoppers, counter displays, and backlit walls), a consistent and recognizable visual system was created.\n\nA valuable experience that allowed me to grow in diverse, fast-paced environments, with direct visibility of results at the point of sale.",
+      IT: "Cofanetti regalo.\nProgettazione e sviluppo di materiali POP per il punto vendita, con focus su allestimenti stagionali, co-marketing e lanci di nuovi prodotti e bundle.\n\nI progetti sono stati realizzati in diversi contesti retail (centri commerciali, librerie, GDO, agenzie viaggio), adattando soluzioni e linguaggi agli spazi e alle esigenze specifiche.\n\nDagli espositori da terra ai materiali coordinati (locandine, leaflet, mensole, stopper, espositori da banco e wall retroilluminati), è stato costruito un sistema visivo coerente e riconoscibile.\n\nUn’esperienza formativa che mi ha permesso di crescere in contesti diversi e ad alto ritmo, con un riscontro diretto sul punto vendita."
+    }
+  },
+  */ 
+  {
+    id: "pam panorama",
+    slug: "pam-panorama",
+    title: "PAM-Panorama",
+    category: "PRINT/POP",
+    tags: ["PRINT/POP"],
+    image: projectThumb("pam-panorama"),
+    gallery: projectGallery("pam-panorama"),
+    description: {
+      EN: "Designed and coordinated retail communication across campaigns, in-store materials and promotional systems, ensuring consistency between brand, product and customer experience.",
+      IT: "Progettato e coordinato la comunicazione retail su campagne, materiali in-store e sistemi promozionali, garantendo coerenza tra brand, prodotto ed esperienza del cliente."
+    },
+    metaDescription: {
+      EN: "Retail communication system designed by Bru Bulgarelli for PAM and Panorama supermarkets — campaigns, in-store materials and promotional systems across multiple locations.",
+      IT: "Sistema di comunicazione retail di Bru Bulgarelli per i supermercati PAM e Panorama — campagne, materiali in-store e sistemi promozionali su più punti vendita."
+    },
+    meta: {
+      subtitle: {
+        EN: "RETAIL COMMUNICATION SYSTEM",
+        IT: "SISTEMA DI COMUNICAZIONE RETAIL"
+      },
+      year: "2010",
+      context: {
+        EN: "Retail communication work developed at Verba DDB for clients Pam and Panorama. The project focused on connecting campaigns, visual assets and in-store materials across multiple touchpoints.",
+        IT: "Lavoro di comunicazione retail sviluppato in Verba DDB per i clienti Pam e Panorama. Il progetto si è concentrato sul collegamento di campagne, asset visivi e materiali in-store su più touchpoint."
+      },
+      roles: ["ART DIRECTION", "CAMPAIGN DESIGN", "RETAIL SYSTEMS"],
+      stack: [],
+      stackGroups: [
+        { title: "COMMUNICATION", items: ["CAMPAIGN DESIGN", "VISUAL DIRECTION", "ART DIRECTION"] },
+        { title: "SYSTEM", items: ["IN-STORE SYSTEMS", "MULTI-TOUCHPOINT STRUCTURE", "CONSISTENT EXECUTION"] },
+        { title: "PRODUCTION", items: ["PRINT PRODUCTION", "PHOTO DIRECTION", "ASSET DEVELOPMENT"] },
+        { title: "COORDINATION", items: ["CLIENT & AGENCY ALIGNMENT", "SUPPLIER COORDINATION", "DELIVERY WORKFLOWS"] }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "STRATEGY & COORDINATION", IT: "STRATEGIA E COORDINAMENTO" },
+          description: {
+            EN: "Managed communication between client, agency and production teams, aligning campaign objectives with visual direction and retail constraints. Established the operational framework for consistent execution across touchpoints.",
+            IT: "Gestita la comunicazione tra cliente, agenzia e team di produzione, allineando gli obiettivi di campagna con la direzione visiva e i vincoli retail. Stabilito il framework operativo per un’esecuzione coerente su tutti i touchpoint."
+          },
+          layout: "text-image",
+          galleryIndices: [0]
+        },
+        {
+          number: "",
+          title: { EN: "SYSTEM OVERVIEW", IT: "PANORAMICA DEL SISTEMA" },
+          description: {
+            EN: "A modular communication system connecting campaign logic, visual assets and retail execution.",
+            IT: "Un sistema di comunicazione modulare che connette logica di campagna, asset visivi ed esecuzione retail."
+          },
+          layout: "diagram",
+          galleryIndices: [5]
+        },
+        {
+          number: "02 & 03",
+          title: { EN: "CONTENT & SYSTEM", IT: "CONTENUTO E SISTEMA" },
+          description: {
+            EN: "Developed visual assets and translated campaign concepts into adaptable communication systems across multiple formats, ensuring consistency between print, promotional and in-store materials.",
+            IT: "Sviluppati asset visivi e tradotti i concetti di campagna in sistemi di comunicazione adattabili su più formati, garantendo coerenza tra materiali stampati, promozionali e in-store."
+          },
+          layout: "full-grid",
+          galleryIndices: [1, 2]
+        },
+        {
+          number: "",
+          title: { EN: "FROM CAMPAIGN TO STORE", IT: "DALLA CAMPAGNA AL PUNTO VENDITA" },
+          description: {
+            EN: "A continuous system connecting campaign design, content production and in-store execution, ensuring coherence across all customer touchpoints.",
+            IT: "Un sistema continuo che connette il design di campagna, la produzione di contenuti e l’esecuzione in-store, garantendo coerenza su tutti i touchpoint del cliente."
+          },
+          layout: "image-text",
+          galleryIndices: [3]
+        },
+        {
+          number: "04",
+          title: { EN: "RETAIL APPLICATIONS", IT: "APPLICAZIONI RETAIL" },
+          description: {
+            EN: "Applied the communication system to retail environments through displays, signage and promotional materials adapted to different store layouts and customer interactions.",
+            IT: "Applicato il sistema di comunicazione agli ambienti retail attraverso espositori, segnaletica e materiali promozionali adattati ai diversi layout dei punti vendita e alle interazioni con il cliente."
+          },
+          layout: "text-image",
+          galleryIndices: [4]
+        },
+        {
+          number: "05",
+          title: { EN: "IMPLEMENTATION", IT: "IMPLEMENTAZIONE" },
+          description: {
+            EN: "Delivered campaign materials across multiple locations, adapting designs to production requirements and ensuring consistency across formats and environments.",
+            IT: "Consegnati i materiali di campagna su più sedi, adattando i design ai requisiti di produzione e garantendo coerenza tra formati e ambienti."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "06",
+          title: { EN: "SCALING & CONSISTENCY", IT: "SCALABILITÀ E COERENZA" },
+          description: {
+            EN: "Supported ongoing campaign rollout and in-store updates, maintaining visual coherence across seasonal changes and different retail contexts.",
+            IT: "Supportato il rollout continuativo delle campagne e gli aggiornamenti in-store, mantenendo la coerenza visiva attraverso i cambiamenti stagionali e i diversi contesti retail."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "",
+          title: { EN: "VISUAL SYSTEM PRINCIPLES", IT: "PRINCIPI DEL SISTEMA VISIVO" },
+          description: {
+            EN: "Consistency across touchpoints. Adaptability to retail environments. Clarity in promotional communication. Integration between campaign and store.",
+            IT: "Coerenza su tutti i touchpoint. Adattabilità agli ambienti retail. Chiarezza nella comunicazione promozionale. Integrazione tra campagna e punto vendita."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A cohesive retail communication system connecting campaign design, visual assets and in-store execution. The work ensured consistency across formats and improved coordination between teams and production.",
+            IT: "Un sistema di comunicazione retail coeso che connette il design di campagna, gli asset visivi e l’esecuzione in-store. Il lavoro ha garantito coerenza tra formati e migliorato il coordinamento tra team e produzione."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
+    }
+  },
   {
     id: "caesius",
     slug: "hotel-caesius",
@@ -551,12 +554,13 @@ export const PROJECTS: Project[] = [
         EN: "Brand identity and guidelines developed for a luxury hotel on Lake Garda, focused on creating a cohesive visual language across guest experience, communication and internal documentation.",
         IT: "Identità di brand e linee guida sviluppate per un hotel di lusso sul Lago di Garda, focalizzate sulla creazione di un linguaggio visivo coerente tra esperienza ospite, comunicazione e documentazione interna."
       },
-      roles: ["VISUAL DESIGN", "BRAND SYSTEM"],
-      stack: [
-        { label: "IDENTITY", value: "SYSTEM" },
-        { label: "BRAND", value: "GUIDELINES" },
-        { label: "PRINT", value: "APPLICATIONS" },
-        { label: "DOCS", value: "GOVERNANCE" }
+      roles: ["BRAND IDENTITY", "VISUAL SYSTEM", "BRAND GUIDELINES"],
+      stack: [],
+      stackGroups: [
+        { title: "BRAND", items: ["POSITIONING", "VISUAL IDENTITY", "ART DIRECTION"] },
+        { title: "SYSTEM", items: ["VISUAL SYSTEM", "GUIDELINES", "APPLICATION RULES"] },
+        { title: "APPLICATIONS", items: ["PRINT MATERIALS", "GUEST EXPERIENCE", "BRAND TOUCHPOINTS"] },
+        { title: "GOVERNANCE", items: ["BRAND CONSISTENCY", "DOCUMENTATION", "SYSTEM MAINTENANCE"] }
       ],
       sections: [
         {
@@ -639,11 +643,13 @@ export const PROJECTS: Project[] = [
         EN: "Branding project for two entrepreneurs, focused on creating a clear and recognizable identity aligned with a dynamic and approachable positioning.",
         IT: "Progetto di branding per due imprenditrici, focalizzato sulla creazione di un’identità chiara e riconoscibile, allineata a un posizionamento dinamico e accessibile."
       },
-      roles: ["VISUAL DESIGN", "BRAND IDENTITY"],
-      stack: [
-        { label: "IDENTITY", value: "SYSTEM" },
-        { label: "PRINT", value: "MATERIALS" },
-        { label: "SIGNAGE", value: "GRAPHICS" }
+      roles: ["VISUAL IDENTITY DESIGN", "LOGO DESIGN", "BRAND APPLICATIONS"],
+      stack: [],
+      stackGroups: [
+        { title: "BRAND", items: ["POSITIONING", "VISUAL IDENTITY", "LOGO DESIGN"] },
+        { title: "SYSTEM", items: ["VISUAL SYSTEM", "COLOR PALETTE", "TYPOGRAPHY"] },
+        { title: "APPLICATIONS", items: ["PRINT MATERIALS", "BRAND ASSETS", "SIGNAGE"] },
+        { title: "EXECUTION", items: ["PRODUCTION FILES", "PRINT OUTPUT", "CONSISTENCY CONTROL"] }
       ],
       sections: [
         {
@@ -704,8 +710,109 @@ export const PROJECTS: Project[] = [
     metaDescription: {
       EN: "Bru Bulgarelli designed the corporate brochure for Il Marmo — editorial design, CMYK with Pantone inks and an embossed metallic cover.",
       IT: "Bru Bulgarelli ha progettato la brochure istituzionale per Il Marmo — design editoriale, quadricromia con Pantoni e copertina metallizzata a rilievo."
+    },
+    meta: {
+      subtitle: {
+        EN: "EDITORIAL SYSTEM FOR MATERIAL CULTURE",
+        IT: "SISTEMA EDITORIALE PER LA CULTURA DEL MATERIALE"
+      },
+      year: "2004",
+      context: {
+        EN: "Il Marmo is an editorial project exploring the relationship between material, architecture, and visual culture. The publication translates the physical qualities of marble into a structured visual narrative, balancing imagery, typography, and spatial rhythm.",
+        IT: "Il Marmo è un progetto editoriale che esplora la relazione tra materiale, architettura e cultura visiva. La pubblicazione traduce le qualità fisiche del marmo in una narrazione visiva strutturata, bilanciando immagine, tipografia e ritmo spaziale."
+      },
+      roles: ["EDITORIAL DESIGN", "ART DIRECTION", "LAYOUT SYSTEM", "IMAGE SELECTION"],
+      stack: [],
+      stackGroups: [
+        { title: "DESIGN", items: ["EDITORIAL DESIGN", "VISUAL SYSTEMS"] },
+        { title: "SYSTEM", items: ["GRID SYSTEMS", "CONTENT HIERARCHY"] },
+        { title: "TOOLS", items: ["INDESIGN", "PHOTOSHOP"] },
+        { title: "PRODUCTION", items: ["CMYK + PANTONE", "EMBOSSED COVER"] }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "IDEATION", IT: "IDEAZIONE" },
+          description: {
+            EN: "The project explores how material qualities can be translated into editorial form. Marble is treated not only as a subject but as a visual language, guiding composition, contrast, and pacing throughout the publication.",
+            IT: "Il progetto esplora come le qualità del materiale possano essere tradotte in forma editoriale. Il marmo non è solo un soggetto ma un linguaggio visivo, capace di guidare composizione, contrasto e ritmo lungo tutta la pubblicazione."
+          },
+          layout: "text-image",
+          galleryIndices: [0]
+        },
+        {
+          number: "",
+          title: { EN: "EDITORIAL SYSTEM", IT: "SISTEMA EDITORIALE" },
+          description: {
+            EN: "A modular editorial structure connecting material imagery, typographic hierarchy, and spatial rhythm into a cohesive publication system.",
+            IT: "Una struttura editoriale modulare che connette immagini del materiale, gerarchia tipografica e ritmo spaziale in un sistema di pubblicazione coeso."
+          },
+          layout: "diagram",
+          galleryIndices: [1]
+        },
+        {
+          number: "02",
+          title: { EN: "STRUCTURE", IT: "STRUTTURA" },
+          description: {
+            EN: "A modular editorial system was developed to organize content across different types of pages. Layouts define a balance between full-bleed imagery, structured text blocks, and mixed compositions, establishing a consistent grid across the publication.",
+            IT: "È stato sviluppato un sistema editoriale modulare per organizzare i contenuti su diverse tipologie di pagina. I layout definiscono un equilibrio tra immagini al vivo, blocchi di testo strutturati e composizioni miste, stabilendo una griglia coerente in tutta la pubblicazione."
+          },
+          layout: "full-grid",
+          galleryIndices: [2, 3, 4]
+        },
+        {
+          number: "",
+          title: { EN: "FROM MATERIAL TO FORM", IT: "DAL MATERIALE ALLA FORMA" },
+          description: {
+            EN: "The publication bridges the gap between raw material and finished object. Process documentation becomes visual narrative, connecting the physicality of stone with the precision of editorial composition.",
+            IT: "La pubblicazione colma la distanza tra materia grezza e oggetto finito. La documentazione del processo diventa narrazione visiva, connettendo la fisicità della pietra con la precisione della composizione editoriale."
+          },
+          layout: "image-text",
+          galleryIndices: [5]
+        },
+        {
+          number: "03",
+          title: { EN: "VISUAL LANGUAGE", IT: "LINGUAGGIO VISIVO" },
+          description: {
+            EN: "The visual language is built on the contrast between texture and architectural space. Black and white photography emphasizes material depth, while restrained typography supports clarity and rhythm. The result is a publication that feels both tactile and architectural.",
+            IT: "Il linguaggio visivo si fonda sul contrasto tra texture e spazio architettonico. La fotografia in bianco e nero enfatizza la profondità del materiale, mentre una tipografia misurata supporta chiarezza e ritmo. Il risultato è una pubblicazione che appare al contempo tattile e architettonica."
+          },
+          layout: "full-grid",
+          galleryIndices: [6, 7, 8]
+        },
+        {
+          number: "04",
+          title: { EN: "EDITORIAL RHYTHM", IT: "RITMO EDITORIALE" },
+          description: {
+            EN: "The sequence of pages alternates between dense imagery and structured content, creating a controlled reading pace. This rhythm reinforces the perception of material, allowing moments of visual immersion and informational clarity.",
+            IT: "La sequenza delle pagine alterna immagini dense e contenuti strutturati, creando un ritmo di lettura controllato. Questo ritmo rafforza la percezione del materiale, alternando momenti di immersione visiva e chiarezza informativa."
+          },
+          layout: "text-image",
+          galleryIndices: [9]
+        },
+        {
+          number: "",
+          title: { EN: "DESIGN PRINCIPLES", IT: "PRINCIPI DI DESIGN" },
+          description: {
+            EN: "Material as visual language. Contrast between texture and space. Typographic restraint over decoration. Controlled rhythm and pacing. Consistency across formats.",
+            IT: "Il materiale come linguaggio visivo. Contrasto tra texture e spazio. Sobrietà tipografica sulla decorazione. Ritmo e cadenza controllati. Coerenza tra i formati."
+          },
+          layout: "half",
+          galleryIndices: [10]
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A cohesive editorial system where material, layout, and typography work together to create a consistent visual narrative. A publication designed to communicate material culture through structure and rhythm.",
+            IT: "Un sistema editoriale coeso in cui materiale, layout e tipografia collaborano per creare una narrazione visiva coerente. Una pubblicazione progettata per comunicare la cultura del materiale attraverso struttura e ritmo."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
     }
-  },  
+  },
   {
     id: "nettuno",
     slug: "hotel-nettuno",
