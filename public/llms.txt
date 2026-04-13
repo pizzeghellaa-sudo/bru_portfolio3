@@ -1,40 +1,80 @@
 # Bru Bulgarelli — Brand & Visual Designer
 
-Bruna Bulgarelli (Bru Bulgarelli) is an Italian brand and visual designer based in Valeggio sul Mincio (Verona), Italy.
+> Bru Bulgarelli is an Italian brand and visual designer based in Verona, Italy, with 30+ years of experience in brand identity, packaging, editorial design and luxury hospitality branding.
 
-She specialises in brand identity, visual systems, editorial design, packaging, and print production for hospitality, cultural, and commercial clients.
+She designs brand identities and visual systems for hospitality, cultural and commercial brands, translating strategy into cohesive visual experiences across print and digital. Her practice spans concept through production — brand guidelines, editorial design, packaging, POP displays, wayfinding, and web.
 
-## Professional Experience
+## Site Structure
 
-- Freelance (2025 – present): Brand identity and visual communication projects for hospitality, cultural and commercial clients.
-- Lead Designer at Europlan S.p.A. (2017–2024): Designed brand and communication materials for a portfolio of Italian hotels and residences on Lake Garda. Managed full production from concept to print, including digital assets.
-- Graphic Team Leader at Wishdays S.r.l. (2014–2016): Led in-house design team, managed seasonal workloads, developed brand guidelines for multiple brands, implemented XML-based automated layout workflows.
-- Graphic Designer at Total Quality Food S.r.l. (2012–2013): Graphic and regulatory support for EU food labelling compliance; trade show and event materials.
-- Account & Graphic Designer at Verba DDB S.r.l. (2005–2010): Managed large retail clients including PAM Group, Panorama and Bata Footwear; oversaw promotional materials, flyers, POP displays and in-store signage.
-- Freelance (2003–2005): Editorial design, multilingual layout, technical manuals, static websites; collaborations with publishers, agencies and software companies.
-- Founder & Co-owner at Pressart S.r.l. (1995–2002): Co-founded a creative agency specialising in branding and printed communication; developed visual identities, editorial design and packaging.
+This portfolio is bilingual: English at /en/ and Italian at /it/. Language is URL-derived; content is identical in both locales.
+
+- Homepage: https://bru-portfolio3.vercel.app/en/
+- Experience: https://bru-portfolio3.vercel.app/en/experience — full career timeline
+- Capabilities: https://bru-portfolio3.vercel.app/en/capabilities — disciplines and tools
+- Selected Works: https://bru-portfolio3.vercel.app/en/selected-works — project archive grid
+- Contact: https://bru-portfolio3.vercel.app/en/contact — availability and contact details
+
+Machine-readable resources:
+- Sitemap: https://bru-portfolio3.vercel.app/sitemap.xml
+- Robots: https://bru-portfolio3.vercel.app/robots.txt
 
 ## Selected Projects
 
-- Hotel Caesius Brand Book (Branding): Visual identity system and brand guidelines for a luxury hospitality brand on Lake Garda. Implemented across printed materials, digital platforms and internal brand documentation.
-- Europlan (Branding / Print): Graphic and editorial communication materials for multiple hotel and residence properties, including promotional campaigns, trade-fair assets and printed collateral.
-- Kalika (Branding / Print): Brand identity for two young entrepreneurs — logo, colour palette, window graphics and visual system for an urban retail context.
-- Emozione3 Brand Book (Branding): Rebranding of Emozione3, an Italian gift box company. Defined new visual identity system including logo usage, tone of voice and brand applications.
-- Emozione3 Pop (Print/POP): Design and development of POP materials for retail — seasonal displays, co-marketing initiatives and new product launches across shopping malls, bookstores and large-scale retail.
-- In-Store Promotion for Panorama / PAM (Print/POP): Promotional materials, flyers, POP displays and in-store signage for Italy's largest supermarket group.
-- Il Marmo Brochure (Editorial): Corporate brochure for a marble company; clean visual narrative from raw material to installation; CMYK with Pantone inks, embossed metallic cover.
-- Hotel Nettuno Paintings (Art / Print): Series of cardboard artworks inspired by Lake Garda landscape; stylised vector graphic language; transparent raised varnish finish.
-- Personal Website (UI/UX/Product): Designed and built this portfolio using AI-assisted design (Stitch AI) and development (React + Vite + Vercel).
+### Hotel Caesius (BRANDING — 2022)
+Visual identity system and brand guidelines for a luxury spa hotel on Lake Garda. Covers all guest touchpoints across print and digital.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/hotel-caesius
 
-## Skills
+### Emozione3 (BRANDING — 2016)
+Brand system for an Italian gift box company — identity, guidelines, retail environments and communication applications across a scalable visual framework.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/emozione3
 
-Adobe Creative Suite (InDesign, Illustrator, Photoshop), brand identity systems, editorial and publication design, packaging design, POP materials, print production, wayfinding, XML automated layout workflows, web design.
+### Europlan (BRANDING / PRINT — 2017–2024)
+10+ years of brand and editorial design for a Lake Garda hospitality group — promotional campaigns, wayfinding, trade-fair assets and print collateral.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/europlan
+
+### Kalika (BRANDING / PRINT — 2025)
+Brand identity and packaging for a new Italian skincare brand — logo, colour palette, window graphics and a dynamic, feminine visual system.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/kalika-skincare
+
+### PAM-Panorama (PRINT / POP — 2005–2010)
+Retail communication system for Italy's largest supermarket group — campaigns, in-store materials, POP displays and promotional systems across multiple locations.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/pam-panorama
+
+### Il Marmo (EDITORIAL — 2004)
+Corporate brochure for a marble company; clean visual narrative from raw material to installation; CMYK with Pantone inks, embossed metallic cover.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/il-marmo
+
+### Hotel Nettuno (PAINTINGS / PRINT)
+Series of cardboard artworks inspired by Lake Garda landscape; stylised vector graphic language; transparent raised varnish finish.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/hotel-nettuno
+
+### Personal Website (UI / UX / PRODUCT — 2026)
+Design and development of this portfolio — Swiss-grid aesthetic, React/Vite/Tailwind stack, built with AI-assisted tooling.
+URL: https://bru-portfolio3.vercel.app/en/selected-works/personal-website
+
+## Professional Experience
+
+- Freelance (2025 – present): Brand identity and visual communication for hospitality, cultural and commercial clients.
+- Lead Designer at Europlan S.p.A. (2017–2024): Brand and communication materials for a portfolio of Italian hotels and residences on Lake Garda. Full production from concept to print.
+- Graphic Team Leader at Wishdays S.r.l. (2014–2016): Led in-house design team, developed brand guidelines for multiple brands, implemented XML-based automated layout workflows.
+- Graphic Designer at Total Quality Food S.r.l. (2012–2013): Graphic and regulatory support for EU food labelling compliance; trade show and event materials.
+- Account & Graphic Designer at Verba DDB S.r.l. (2005–2010): Managed large retail clients including PAM Group, Panorama and Bata Footwear; promotional materials, flyers, POP displays and in-store signage.
+- Freelance (2003–2005): Editorial design, multilingual layout, technical manuals, static websites.
+- Founder & Co-owner at Pressart S.r.l. (1995–2002): Co-founded a creative agency specialising in branding and printed communication.
+
+## Capabilities
+
+Disciplines: Brand Identity, Visual Systems, Editorial Design, Packaging, POP Materials, Wayfinding, Print Production, Web & Digital Design
+
+Tools: Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Adobe Lightroom, Canva, AI tools for creativity and productivity
+
+Working methods: Precision, structured workflows, team coordination, full production management from concept to final artwork.
 
 ## Contact
 
 Email: bulgarellibru@gmail.com
 Phone: +39 347 3587524
-Location: Valeggio sul Mincio (Verona), Italy
+Location: Valeggio sul Mincio (Verona), Italy — 37067
 Available for freelance brand identity and visual system projects.
 
 ## Links

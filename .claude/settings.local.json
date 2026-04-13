@@ -41,7 +41,8 @@
       "Bash(ls:*)",
       "mcp__plugin_playwright_playwright__browser_resize",
       "mcp__plugin_playwright_playwright__browser_wait_for",
-      "mcp__plugin_playwright_playwright__browser_click"
+      "mcp__plugin_playwright_playwright__browser_click",
+      "WebFetch(domain:bru-portfolio3.vercel.app)"
     ]
   },
   "enableAllProjectMcpServers": true,
