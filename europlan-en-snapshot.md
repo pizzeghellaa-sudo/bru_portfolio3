@@ -1,0 +1,75 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - heading "BRU BULGARELLI PORTFOLIO 2026" [level=1] [ref=e7]:
+        - text: BRU BULGARELLI
+        - generic [ref=e8]: PORTFOLIO 2026
+      - navigation [ref=e9]:
+        - link "INDEX" [ref=e10] [cursor=pointer]:
+          - /url: /en/
+          - text: INDEX
+        - link "EXPERIENCE" [ref=e11] [cursor=pointer]:
+          - /url: /en/experience
+          - text: EXPERIENCE
+        - link "CAPABILITIES" [ref=e12] [cursor=pointer]:
+          - /url: /en/capabilities
+          - text: CAPABILITIES
+        - link "SELECTED WORKS" [ref=e13] [cursor=pointer]:
+          - /url: /en/selected-works
+          - text: SELECTED WORKS
+        - link "CONTACTS" [ref=e15] [cursor=pointer]:
+          - /url: /en/contact
+          - text: CONTACTS
+    - generic [ref=e16]:
+      - paragraph [ref=e17]: The work presented in this portfolio was carried out during the collaboration with the indicated company, and is shown exclusively for the purpose of demonstrating professional skills. All rights relating to the projects belong to their respective owners.
+      - generic [ref=e18]:
+        - button "EN" [ref=e19]
+        - button "IT" [ref=e20]
+      - paragraph [ref=e21]:
+        - text: VALEGGIO SUL MINCIO, IT
+        - text: 9:41:12 CEST
+  - main [ref=e22]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - button "← BACK TO MY WORK" [ref=e26]:
+          - generic [ref=e27]: ←
+          - text: BACK TO MY WORK
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - heading "Europlan" [level=2] [ref=e30]
+            - paragraph [ref=e31]: HOSPITALITY COMMUNICATION SYSTEM
+          - generic [ref=e32]: YEAR — 2017
+      - generic [ref=e34]:
+        - complementary [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: B1 / CONTEXT
+            - paragraph [ref=e38]: Europlan is a hospitality group based on Lake Garda, operating across hotels, residences and tourism-related services. Over more than ten years, the project involved the design and development of editorial and printed communication materials across multiple properties, with a focus on consistency, clarity and production quality.
+          - generic [ref=e39]:
+            - generic [ref=e40]: B2 / ROLE
+            - list [ref=e41]
+          - generic [ref=e57]:
+            - generic [ref=e58]: B3 / STACK
+            - generic [ref=e59]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]
+            - img "Europlan 01" [ref=e79]
+          - generic [ref=e80]:
+            - generic [ref=e81]: SYSTEM OVERVIEW
+            - img "SYSTEM OVERVIEW" [ref=e83]
+            - paragraph [ref=e84]: A modular editorial system connecting properties, formats and communication needs into a consistent printed output.
+          - generic [ref=e85]:
+            - generic [ref=e86]
+            - img "Europlan 02 & 03" [ref=e92]
+          - generic [ref=e93]:
+            - img "Europlan" [ref=e96]
+            - generic [ref=e98]
+          - generic [ref=e101]:
+            - generic [ref=e102]
+            - generic [ref=e106]
+          - generic [ref=e113]:
+            - generic [ref=e114]
+            - img "Europlan 05" [ref=e119]
+          - generic [ref=e120]:
+            - generic [ref=e122]
+            - generic [ref=e127]

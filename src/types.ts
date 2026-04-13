@@ -26,12 +26,18 @@ export interface StorySection {
   };
 }
 
+export interface StackGroup {
+  title: string;
+  items: string[];
+}
+
 export interface ProjectMeta {
   subtitle: { EN: string; IT: string };
   year: string;
   context: { EN: string; IT: string };
   roles: string[];
   stack: { label: string; value: string }[];
+  stackGroups?: StackGroup[];
   sections: StorySection[];
 }
 
@@ -410,8 +416,115 @@ export const PROJECTS: Project[] = [
     metaDescription: {
       EN: "10+ years of brand and editorial design by Bru Bulgarelli for Europlan, a Lake Garda hospitality group — promotional campaigns, wayfinding and print collateral.",
       IT: "Oltre 10 anni di brand ed editorial design di Bru Bulgarelli per Europlan, gruppo turistico del Lago di Garda — campagne promozionali, segnaletica e stampa."
+    },
+    meta: {
+      subtitle: {
+        EN: "HOSPITALITY COMMUNICATION SYSTEM",
+        IT: "SISTEMA DI COMUNICAZIONE PER L'HOSPITALITY"
+      },
+      year: "2017",
+      context: {
+        EN: "Europlan is a hospitality group based on Lake Garda, operating across hotels, residences and tourism-related services. Over more than ten years, the project involved the design and development of editorial and printed communication materials across multiple properties, with a focus on consistency, clarity and production quality.",
+        IT: "Europlan è un gruppo turistico con sede sul Lago di Garda, attivo tra hotel, residenze e servizi legati al turismo. Per oltre dieci anni, il progetto ha coinvolto la progettazione e lo sviluppo di materiali di comunicazione editoriale e stampata per diverse strutture, con attenzione alla coerenza, alla chiarezza e alla qualità produttiva."
+      },
+      roles: [
+        "EDITORIAL DESIGN",
+        "PRINT COMMUNICATION",
+        "ART DIRECTION",
+        "IMAGE SELECTION & RETOUCHING",
+        "PRODUCTION COORDINATION"
+      ],
+      stack: [],
+      stackGroups: [
+        { title: "DESIGN", items: ["EDITORIAL", "VISUAL SYSTEMS", "ART DIRECTION"] },
+        { title: "SYSTEM", items: ["GRID SYSTEMS", "CONTENT HIERARCHY", "MULTI-FORMAT LAYOUT SYSTEMS"] },
+        { title: "TOOLS", items: ["INDESIGN", "ILLUSTRATOR", "PHOTOSHOP"] },
+        { title: "PRODUCTION", items: ["PRINT PRODUCTION", "PREPRESS", "SUPPLIER COORDINATION"] }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "IDEATION", IT: "IDEAZIONE" },
+          description: {
+            EN: "The project required a communication system capable of adapting to different properties, audiences and seasonal offers while maintaining a coherent visual identity. The goal was to structure complex hospitality content into clear, image-led printed materials, balancing promotional needs with editorial clarity and readability.",
+            IT: "Il progetto richiedeva un sistema di comunicazione capace di adattarsi a diverse strutture, target e offerte stagionali, mantenendo un'identità visiva coerente. L'obiettivo era strutturare contenuti complessi del settore hospitality in materiali stampati chiari e guidati dall'immagine, bilanciando esigenze promozionali con chiarezza editoriale e leggibilità."
+          },
+          layout: "text-image",
+          galleryIndices: [1]
+        },
+        {
+          number: "",
+          title: { EN: "SYSTEM OVERVIEW", IT: "PANORAMICA DEL SISTEMA" },
+          description: {
+            EN: "A modular editorial system connecting properties, formats and communication needs into a consistent printed output.",
+            IT: "Un sistema editoriale modulare che collega strutture, formati ed esigenze di comunicazione in un output stampato coerente."
+          },
+          layout: "diagram",
+          galleryIndices: [0]
+        },
+        {
+          number: "02 & 03",
+          title: { EN: "STRUCTURE & SYSTEM", IT: "STRUTTURA E SISTEMA" },
+          description: {
+            EN: "A modular editorial system was developed to support multiple formats and communication needs. Layouts were designed around a consistent grid and hierarchy, defining the relationship between imagery, headlines, descriptive content and supporting information. This approach ensured continuity across different publications while allowing flexibility in composition and content density.",
+            IT: "È stato sviluppato un sistema editoriale modulare per supportare diversi formati ed esigenze di comunicazione. I layout sono stati progettati attorno a una griglia e una gerarchia coerenti, definendo la relazione tra immagini, titoli, contenuti descrittivi e informazioni di supporto. Questo approccio ha garantito continuità tra le diverse pubblicazioni, consentendo flessibilità nella composizione e nella densità dei contenuti."
+          },
+          layout: "full-grid",
+          galleryIndices: [3]
+        },
+        {
+          number: "",
+          title: { EN: "FROM SYSTEM TO EXPRESSION", IT: "DAL SISTEMA ALL'ESPRESSIONE" },
+          description: {
+            EN: "The editorial system evolved beyond structure into a tool for visual storytelling. Photography and layout rhythm work together to communicate atmosphere and place, bridging systematic consistency with the sensory qualities of hospitality communication.",
+            IT: "Il sistema editoriale si è evoluto oltre la struttura, diventando uno strumento di narrazione visiva. Fotografia e ritmo compositivo collaborano per comunicare atmosfera e luogo, collegando la coerenza sistematica alle qualità sensoriali della comunicazione per l'hospitality."
+          },
+          layout: "image-text",
+          galleryIndices: [2]
+        },
+        {
+          number: "04",
+          title: { EN: "VISUAL DESIGN", IT: "DESIGN VISIVO" },
+          description: {
+            EN: "The visual language combines editorial clarity with a hospitality-driven atmosphere. Photography plays a central role, supported by a restrained typographic system and controlled use of layout rhythm to guide reading and enhance the perception of place. The result is a balance between information and storytelling, where content is structured but never rigid.",
+            IT: "Il linguaggio visivo combina chiarezza editoriale con un'atmosfera orientata all'hospitality. La fotografia riveste un ruolo centrale, supportata da un sistema tipografico sobrio e da un uso controllato del ritmo compositivo per guidare la lettura e valorizzare la percezione del luogo. Il risultato è un equilibrio tra informazione e narrazione, dove il contenuto è strutturato ma mai rigido."
+          },
+          layout: "full-grid",
+          galleryIndices: [4, 5, 6]
+        },
+        {
+          number: "05",
+          title: { EN: "APPLICATIONS", IT: "APPLICAZIONI" },
+          description: {
+            EN: "The system was applied across a wide range of printed materials, including brochures, promotional publications and multi-page editorial assets. Each output adapts to its specific purpose while maintaining a consistent visual language across formats, properties and communication contexts.",
+            IT: "Il sistema è stato applicato a un'ampia gamma di materiali stampati, tra cui brochure, pubblicazioni promozionali e prodotti editoriali multipagina. Ogni output si adatta al proprio scopo specifico, mantenendo un linguaggio visivo coerente tra formati, strutture e contesti comunicativi."
+          },
+          layout: "text-image",
+          galleryIndices: [7]
+        },
+        {
+          number: "",
+          title: { EN: "EDITORIAL SYSTEM PRINCIPLES", IT: "PRINCIPI DEL SISTEMA EDITORIALE" },
+          description: {
+            EN: "Consistency across properties and formats. Modular and adaptable layouts. Editorial clarity in hospitality communication. Controlled use of photography. Scalable production workflow.",
+            IT: "Coerenza tra strutture e formati. Layout modulari e adattabili. Chiarezza editoriale nella comunicazione per l'hospitality. Uso controllato della fotografia. Flusso produttivo scalabile."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A consistent editorial and print communication system across multiple Europlan properties, supporting a clearer and more cohesive representation of the group's hospitality offer. A scalable approach designed to evolve over time while maintaining visual continuity.",
+            IT: "Un sistema di comunicazione editoriale e stampata coerente tra le diverse strutture Europlan, a supporto di una rappresentazione più chiara e coesa dell'offerta di hospitality del gruppo. Un approccio scalabile, progettato per evolversi nel tempo mantenendo continuità visiva."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
     }
-  },  
+  },
   {
     id: "caesius",
     slug: "hotel-caesius",

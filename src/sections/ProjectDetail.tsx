@@ -345,14 +345,29 @@ export default function ProjectDetail() {
             {/* B3 / STACK */}
             <div className="flex flex-col gap-3">
               <span className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">B3 / {t.detail.stack}</span>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-                {meta.stack.map(item => (
-                  <div key={item.label} className="flex flex-col gap-0.5">
-                    <span className="font-mono text-[9px] text-slate-400 uppercase tracking-widest">{item.label}</span>
-                    <span className="font-mono text-xs text-ink">{item.value}</span>
-                  </div>
-                ))}
-              </div>
+              {meta.stackGroups ? (
+                <div className="grid grid-cols-2 gap-x-6 gap-y-5">
+                  {meta.stackGroups.map(group => (
+                    <div key={group.title} className="flex flex-col gap-1.5">
+                      <span className="font-mono text-[9px] text-slate-400 uppercase tracking-widest">{group.title}</span>
+                      <ul className="flex flex-col gap-1">
+                        {group.items.map(item => (
+                          <li key={item} className="font-mono text-xs text-ink">{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 gap-x-4 gap-y-3">
+                  {meta.stack.map(item => (
+                    <div key={item.label} className="flex flex-col gap-0.5">
+                      <span className="font-mono text-[9px] text-slate-400 uppercase tracking-widest">{item.label}</span>
+                      <span className="font-mono text-xs text-ink">{item.value}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </aside>
 
