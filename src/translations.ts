@@ -15,6 +15,10 @@ export const TRANSLATIONS = {
       metaDescription: 'Bru Bulgarelli is a Brand & Visual Designer based in Verona, Italy, with 30+ years of experience in brand identity, packaging, editorial design and luxury hospitality branding.',
       cta: 'Selected Works',
       scroll: 'SCROLL TO EXPLORE',
+      testimonialsLabel: 'TESTIMONIALS',
+      testimonialsTitle: 'Trusted by clients and teams',
+      ctaTitle: "Let's work together",
+      ctaButton: 'CONTACT ME',
     },
     timeline: {
       title: 'EXPERIENCE',
@@ -91,6 +95,10 @@ export const TRANSLATIONS = {
       metaDescription: 'Bru Bulgarelli è una Brand & Visual Designer a Verona, Italia, con oltre 30 anni di esperienza in brand identity, packaging, editoria e branding per l\'ospitalità di lusso.',
       cta: 'Lavori selezionati',
       scroll: 'SCORRI PER ESPLORARE',
+      testimonialsLabel: 'TESTIMONIANZE',
+      testimonialsTitle: 'Fiducia di clienti e team',
+      ctaTitle: 'Lavoriamo insieme',
+      ctaButton: 'CONTATTAMI',
     },
     timeline: {
       title: 'ESPERIENZA',

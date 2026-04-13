@@ -42,6 +42,13 @@ export interface ProjectMeta {
   sections: StorySection[];
 }
 
+export interface Testimonial {
+  id: string;
+  name: string;
+  role: { EN: string; IT: string };
+  quote: { EN: string; IT: string };
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -936,5 +943,32 @@ export const PROJECTS: Project[] = [
     }
   }
 
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 'cristina-pozzi',
+    name: 'Cristina Pozzi',
+    role: {
+      EN: 'CEO, Wishdays / Emozione3',
+      IT: 'CEO, Wishdays / Emozione3',
+    },
+    quote: {
+      EN: 'Bruna joined the company with remarkable ease, integrating with natural poise and a strong sense of order. She consistently demonstrated reliability in the team, even in high-pressure situations. Her work always remained creative and highly organised. It was truly a pleasure working with someone like her.',
+      IT: 'Bruna si è inserita in azienda con una facilità straordinaria, integrandosi con naturalezza e grande senso dell\'ordine. Ha sempre dimostrato affidabilità nel team, anche nelle situazioni di maggiore pressione. Il suo lavoro è sempre rimasto creativo e altamente organizzato. È stato davvero un piacere lavorare con qualcuno come lei.',
+    },
+  },
+  {
+    id: 'luciano-martini',
+    name: 'Luciano Martini',
+    role: {
+      EN: 'Amministratore, Il Marmo S.r.l.',
+      IT: 'Amministratore, Il Marmo S.r.l.',
+    },
+    quote: {
+      EN: 'Bruna is an excellent graphic designer, able to understand a client\'s needs and translate them into printed material that fully reflects their vision. Working with Bruna is very pleasant both professionally and personally. Thank you again, Bruna.',
+      IT: 'Bruna è un\'eccellente graphic designer, capace di comprendere le esigenze del cliente e tradurle in materiale stampato che riflette pienamente la loro visione. Lavorare con Bruna è molto piacevole sia professionalmente che personalmente. Grazie ancora, Bruna.',
+    },
+  },
 ];
 
