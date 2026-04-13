@@ -85,7 +85,7 @@ export const EXPERIENCE: Experience[] = [
       EN: "Lead design and production of brand and editorial communication systems for a hospitality group.\nManaged the full process from concept to print, ensuring consistency across properties, formats and materials.\nCoordinated internal teams, external suppliers and digital workflows, integrating print and digital assets.",
       IT: "Responsabile della progettazione e produzione di sistemi di comunicazione brand ed editoriali per un gruppo hospitality.\nGestione dell’intero processo, dal concept alla stampa, garantendo coerenza tra strutture, formati e materiali.\nCoordinamento di team interni, fornitori esterni e flussi digitali, integrando asset print e digital."
     },
-    projects: [{ name: "Europlan", slug: "europlan" }, { name: "Hotel Caesius", slug: "hotel-caesius" }]
+    projects: [{ name: "Europlan", slug: "europlan" }, { name: "Hotel Caesius", slug: "hotel-caesius" }, { name: "Hotel Nettuno", slug: "hotel-nettuno" }]
   },
   {
     period: "2014 — 2016",

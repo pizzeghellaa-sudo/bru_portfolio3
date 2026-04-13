@@ -94,7 +94,7 @@ export default function TimelineSection() {
                       >
                         {t.projects}
                       </span>
-                      <div className="flex flex-wrap gap-x-5 gap-y-1">
+                      <div className="flex flex-wrap gap-x-8 gap-y-2">
                         {exp.projects.map((proj) => (
                           <Link
                             key={proj.slug}
