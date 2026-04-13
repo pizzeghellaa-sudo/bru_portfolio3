@@ -6,6 +6,7 @@ import { TRANSLATIONS } from '../translations';
 import type { LayoutContext } from '../layouts/RootLayout';
 import PageHead from '../components/PageHead';
 import { buildPersonJsonLd, buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
+import { resolveThumbAlt, resolveVideoAlt } from '../lib/altText';
 
 export default function WorkSection() {
   const { language } = useOutletContext<LayoutContext>();
@@ -95,6 +96,7 @@ export default function WorkSection() {
                 {project.video ? (
                   <video
                     src={project.video}
+                    aria-label={resolveVideoAlt(project.videoAlt, project.title, language)}
                     muted
                     playsInline
                     onLoadedData={(e) => {
@@ -113,7 +115,7 @@ export default function WorkSection() {
                 ) : (
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={resolveThumbAlt(project.imageAlt, project.title, project.category, language)}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     referrerPolicy="no-referrer"
                   />

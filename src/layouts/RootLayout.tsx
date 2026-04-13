@@ -9,7 +9,7 @@ import type { Language } from '../translations';
 
 export interface LayoutContext {
   language: Language;
-  onImageClick: (images: string[], index: number) => void;
+  onImageClick: (images: string[], alts: string[], index: number) => void;
 }
 
 export default function RootLayout() {
@@ -21,6 +21,7 @@ export default function RootLayout() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState<Date | null>(null);
   const [modalImages, setModalImages] = useState<string[]>([]);
+  const [modalAlts, setModalAlts] = useState<string[]>([]);
   const [zoomIndex, setZoomIndex] = useState<number | null>(null);
   const mainRef = useRef<HTMLElement>(null);
 
@@ -41,8 +42,9 @@ export default function RootLayout() {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
-  const handleImageClick = (images: string[], index: number) => {
+  const handleImageClick = (images: string[], alts: string[], index: number) => {
     setModalImages(images);
+    setModalAlts(alts);
     setZoomIndex(index);
   };
 
@@ -87,8 +89,9 @@ export default function RootLayout() {
         {zoomIndex !== null && modalImages.length > 0 && (
           <ImageModal
             images={modalImages}
+            alts={modalAlts}
             currentIndex={zoomIndex}
-            onClose={() => { setZoomIndex(null); setModalImages([]); }}
+            onClose={() => { setZoomIndex(null); setModalImages([]); setModalAlts([]); }}
             onNext={() => setZoomIndex(i => ((i ?? 0) + 1) % modalImages.length)}
             onPrev={() => setZoomIndex(i => ((i ?? 0) - 1 + modalImages.length) % modalImages.length)}
             language={language}

@@ -1,4 +1,4 @@
-export type GalleryItem = { thumb: string; full: string };
+export type GalleryItem = { thumb: string; full: string; alt?: { EN: string; IT: string } };
 
 const files = import.meta.glob("../assets/projects/**/*.{jpg,jpeg,png,webp,avif}", {
   eager: true,

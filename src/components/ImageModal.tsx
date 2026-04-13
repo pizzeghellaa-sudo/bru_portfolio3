@@ -6,6 +6,7 @@ import type { Language } from '../translations';
 
 interface ImageModalProps {
   images: string[];
+  alts: string[];
   currentIndex: number;
   onClose: () => void;
   onNext: () => void;
@@ -15,6 +16,7 @@ interface ImageModalProps {
 
 export default function ImageModal({
   images,
+  alts,
   currentIndex,
   onClose,
   onNext,
@@ -183,7 +185,7 @@ export default function ImageModal({
           ref={imgRef}
           key={src}
           src={src}
-          alt="Full screen view"
+          alt={alts[currentIndex] || 'Full screen view'}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

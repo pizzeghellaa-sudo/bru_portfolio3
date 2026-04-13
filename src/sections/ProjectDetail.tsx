@@ -5,6 +5,7 @@ import type { LayoutContext } from '../layouts/RootLayout';
 import PageHead from '../components/PageHead';
 import { buildBreadcrumbJsonLd } from '../seo/pageJsonLd';
 import { buildCreativeWorkJsonLd } from '../seo/projectJsonLd';
+import { resolveGalleryAlt } from '../lib/altText';
 
 export default function ProjectDetail() {
   const { language, onImageClick } = useOutletContext<LayoutContext>();
@@ -34,7 +35,10 @@ export default function ProjectDetail() {
 
   const handleImageClick = (index: number) => {
     const images = project.gallery.map(img => img.full);
-    onImageClick(images, index);
+    const alts = project.gallery.map(img =>
+      resolveGalleryAlt(img.alt, project.title, project.category, language)
+    );
+    onImageClick(images, alts, index);
   };
 
   // Render a single story section
@@ -59,7 +63,7 @@ export default function ProjectDetail() {
       >
         <img
           src={img.thumb}
-          alt={`${project.title} ${section.number}`}
+          alt={resolveGalleryAlt(img.alt, project.title, project.category, language, section.title)}
           className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
           referrerPolicy="no-referrer"
         />
@@ -112,7 +116,7 @@ export default function ProjectDetail() {
             >
               <img
                 src={img.full}
-                alt={section.title[language]}
+                alt={resolveGalleryAlt(img.alt, project.title, project.category, language, section.title)}
                 className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -157,7 +161,7 @@ export default function ProjectDetail() {
                   >
                     <img
                       src={img.thumb}
-                      alt={`${project.title} ${section.number} screenshot ${rowIdx + 1}`}
+                      alt={resolveGalleryAlt(img.alt, project.title, project.category, language, section.title)}
                       className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                       referrerPolicy="no-referrer"
                     />
@@ -184,7 +188,7 @@ export default function ProjectDetail() {
                       >
                         <img
                           src={beforeImg.thumb}
-                          alt={beforeLabel[language]}
+                          alt={`${project.title} — ${beforeLabel[language]}`}
                           className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                           referrerPolicy="no-referrer"
                         />
@@ -203,7 +207,7 @@ export default function ProjectDetail() {
                       >
                         <img
                           src={afterImg.thumb}
-                          alt={afterLabel[language]}
+                          alt={`${project.title} — ${afterLabel[language]}`}
                           className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                           referrerPolicy="no-referrer"
                         />
@@ -259,7 +263,7 @@ export default function ProjectDetail() {
                     >
                       <img
                         src={img.thumb}
-                        alt={`${project.title} ${s.number}`}
+                        alt={resolveGalleryAlt(img.alt, project.title, project.category, language, s.title)}
                         className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                         referrerPolicy="no-referrer"
                       />
@@ -401,7 +405,7 @@ export default function ProjectDetail() {
               >
                 <img
                   src={img.thumb}
-                  alt={`${project.title} gallery ${i}`}
+                  alt={resolveGalleryAlt(img.alt, project.title, project.category, language)}
                   className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />

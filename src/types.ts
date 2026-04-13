@@ -65,9 +65,12 @@ export interface Project {
     EN: string;
     IT: string;
   };
+  imageAlt?: { EN: string; IT: string }; // Descriptive alt for archive grid thumbnail
+  videoAlt?: { EN: string; IT: string }; // aria-label for video thumbnail
   gallery: {
     thumb: string; // Low-res for the gallery list
     full: string;  // High-res for the zoom modal
+    alt?: { EN: string; IT: string };
   }[];
   meta?: ProjectMeta;
 }
@@ -152,6 +155,10 @@ export const PROJECTS: Project[] = [
     category: "BRANDING",
     tags: ["BRANDING"],
     image: projectThumb("emozione3"),
+    imageAlt: {
+      EN: "Emozione3 brand identity system — visual identity designed by Bruna Bulgarelli",
+      IT: "Sistema di brand identity Emozione3 — identità visiva progettata da Bruna Bulgarelli"
+    },
     gallery: [...projectGallery("emozione3"), ...projectGallery("emozione3-pop")],
     description: {
       EN: "Designed a scalable brand system for Emozione3, aligning identity, communication and retail environments into a coherent visual framework across physical and digital touchpoints.",
@@ -281,6 +288,10 @@ export const PROJECTS: Project[] = [
     category: "BRANDING / PRINT",
     tags: ["PRINT"],
     image: projectThumb("europlan"),
+    imageAlt: {
+      EN: "Europlan hospitality communication system — editorial and brand design by Bruna Bulgarelli",
+      IT: "Sistema di comunicazione Europlan — editorial e brand design di Bruna Bulgarelli"
+    },
 	  gallery: projectGallery("europlan"),
     description: {
       EN: "For over ten years I worked in the design department of Europlan, a leading hospitality group on Lake Garda serving an international market. I developed graphic and editorial communication materials for multiple properties, including promotional campaigns, trade-fair assets, and printed collateral.\n\nMy role covered graphic design, editorial layout, photo post-production, and retouching, as well as the design of visual communication systems and wayfinding across hospitality, wellness, events, and business contexts.",
@@ -420,6 +431,10 @@ export const PROJECTS: Project[] = [
     category: "PRINT/POP",
     tags: ["PRINT/POP"],
     image: projectThumb("pam-panorama"),
+    imageAlt: {
+      EN: "PAM-Panorama retail communication system — print and POP design by Bruna Bulgarelli",
+      IT: "Sistema di comunicazione retail PAM-Panorama — print e POP design di Bruna Bulgarelli"
+    },
     gallery: projectGallery("pam-panorama"),
     description: {
       EN: "Designed and coordinated retail communication across campaigns, in-store materials and promotional systems, ensuring consistency between brand, product and customer experience.",
@@ -548,6 +563,10 @@ export const PROJECTS: Project[] = [
     category: "BRANDING",
     tags: ["BRANDING"],
     image: projectThumb("caesius"),
+    imageAlt: {
+      EN: "Hotel Caesius brand identity guidelines — luxury hospitality design by Bruna Bulgarelli",
+      IT: "Linee guida brand identity Hotel Caesius — design per l'ospitalità di lusso di Bruna Bulgarelli"
+    },
 	  gallery: projectGallery("caesius"),
     description: {
       EN: "Hotel Caesius is a luxury hospitality brand located on Lake Garda. The project involved the creation of a visual identity system and brand guidelines for print and digital applications.\n\nThe identity was implemented across all hotel touchpoints including printed materials, digital platforms and internal brand documentation.",
@@ -636,7 +655,15 @@ export const PROJECTS: Project[] = [
     category: "BRANDING / PRINT",
     tags: ["PRINT"],
     image: projectThumb("kalika"),
+    imageAlt: {
+      EN: "Kalika Skincare brand identity — packaging and visual identity designed by Bruna Bulgarelli",
+      IT: "Brand identity Kalika Skincare — packaging e identità visiva di Bruna Bulgarelli"
+    },
     video: projectVideo("kalika", "kalika_logo_animate.mp4"),
+    videoAlt: {
+      EN: "Kalika Skincare animated logo — brand identity designed by Bruna Bulgarelli",
+      IT: "Logo animato Kalika Skincare — brand identity di Bruna Bulgarelli"
+    },
 	  gallery: projectGallery("kalika"),
     description: {
       EN: "Kalika Branding Project\n\nThe branding project reflects the identity of the two young entrepreneurs: dynamic, feminine and approachable, with a careful and professional approach.\n\nAt the center of the visual system there is a versatile and easily recognizable logo, developed in a young and bright color palette, designed to communicate freshness, energy and positivity across all touchpoints.\n\nThe window graphic also helps to strengthen the brand presence and recognition over time in the urban space.",
@@ -715,6 +742,10 @@ export const PROJECTS: Project[] = [
     category: "EDITORIAL",
     tags: ["PRINT"],
     image: projectThumb("ilmarmo"),
+    imageAlt: {
+      EN: "Il Marmo corporate brochure — editorial design by Bruna Bulgarelli",
+      IT: "Brochure istituzionale Il Marmo — editorial design di Bruna Bulgarelli"
+    },
     gallery: projectGallery("ilmarmo"),
     description: {
       EN: "Editorial Project — Marble Company\n\nDesign of a corporate brochure for a marble company, aimed at conveying a more contemporary and authoritative image while highlighting technical expertise and production complexity.\n\nThe project develops a clean, process-driven visual narrative, from raw material selection to advanced manufacturing and installation, supported by a curated gallery of high-end architectural applications.\n\nA refined color palette and premium print production (CMYK with Pantone inks) enhance the design, with an embossed metallic cover where stone names become a distinctive typographic element.\n\nThe result is an elegant, timeless editorial piece that translates technical know-how into a clear and sophisticated visual story.",
@@ -833,6 +864,10 @@ export const PROJECTS: Project[] = [
     category: "PAINTINSG / PRINT",
     tags: ["PRINT"],
     image: projectThumb("nettuno"),
+    imageAlt: {
+      EN: "Hotel Nettuno Lake Garda artwork series — painting and print design by Bruna Bulgarelli",
+      IT: "Serie di opere Hotel Nettuno Lago di Garda — pittura e print design di Bruna Bulgarelli"
+    },
     gallery: projectGallery("nettuno"),
     description: {
       EN: "The work consists of a series of cardboard artworks inspired by the landscape of Lake Garda, reinterpreted through a stylized and minimal vector graphic language.\n\nThe system includes three formats, square, horizontal and vertical, designed to integrate with the hotel spaces and create visual continuity with the surrounding territory.\n\nProduced on cardboard with a transparent raised varnish, the pieces combine lightness, sustainability and attention to detail.",
@@ -850,6 +885,10 @@ export const PROJECTS: Project[] = [
     category: "UI / UX / PRODUCT",
     tags: ["WEB"],
     image: projectThumb("portfolio"),
+    imageAlt: {
+      EN: "Personal portfolio website — UI/UX and product design by Bruna Bulgarelli",
+      IT: "Sito portfolio personale — UI/UX e product design di Bruna Bulgarelli"
+    },
     gallery: projectGallery("portfolio"),
     description: {
       EN: "Personal portfolio website\n\n1.Ideation — defined project goals, audience and positioning.\n\n2. Information Architecture — structured pages, navigation and content hierarchy.\n\n3. Wireframing — explored layout structures and user flows.\n\n4. Visual Design — developed typography, visual system and UI components using Stitch AI through iterative prompt-based design sessions.\n\n5. Development & Launch — built the website with AI-assisted coding using Gemini 3 Flash (Vite, React), iterating features before version control on GitHub and automated deployment via Vercel.",
