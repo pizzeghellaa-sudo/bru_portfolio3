@@ -115,7 +115,7 @@ export const TRANSLATIONS = {
       },
       disciplines: ['Brand Identity', 'Sistemi Visivi', 'Design Editoriale', 'Packaging', 'Web e Digitale', 'Processi di stampa'],
       tooling: [
-        'AI-assisted tools for creative workflows and automation',
+        'Strumenti AI per creatività, produttività e automazione',
         'Adobe InDesign',
         'Adobe Photoshop',
         'Adobe Illustrator',
