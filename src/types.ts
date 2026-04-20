@@ -175,8 +175,8 @@ export const PROJECTS: Project[] = [
       },
       year: "2016",
       context: {
-        EN: "Emozione3 required a structured brand system to support growth and ensure consistency across retail and communication channels. The challenge was to define a clear visual language and translate it into adaptable applications across multiple environments and formats.",
-        IT: "Emozione3 richiedeva un sistema di brand strutturato per supportare la crescita e garantire coerenza su tutti i canali retail e di comunicazione. La sfida era definire un linguaggio visivo chiaro e tradurlo in applicazioni adattabili su più ambienti e formati."
+        EN: "Emozione3 required a structured brand system to support growth and ensure consistency across retail and communication channels, involving hundreds of points of sale. The challenge was to define a clear visual language and translate it into adaptable applications across multiple environments and formats.",
+        IT: "Emozione3 richiedeva un sistema di brand strutturato per supportare la crescita e garantire coerenza tra retail e canali di comunicazione, coinvolgendo centinaia di punti vendita. La sfida era definire un linguaggio visivo chiaro e tradurlo in applicazioni adattabili su molteplici ambienti e formati."
       },
       roles: ["BRAND IDENTITY", "VISUAL SYSTEM", "RETAIL APPLICATIONS"],
       stack: [],
@@ -451,8 +451,8 @@ export const PROJECTS: Project[] = [
       },
       year: "2010",
       context: {
-        EN: "Retail communication work developed at Verba DDB for clients Pam and Panorama. The project focused on connecting campaigns, visual assets and in-store materials across multiple touchpoints.",
-        IT: "Lavoro di comunicazione retail sviluppato in Verba DDB per i clienti Pam e Panorama. Il progetto si è concentrato sul collegamento di campagne, asset visivi e materiali in-store su più touchpoint."
+        EN: "Retail communication work developed at Verba DDB for clients Pam and Panorama, involving approximately 150 stores. The project focused on integrating campaigns, visual assets, and in-store materials across multiple touchpoints.",
+        IT: "Lavoro di comunicazione retail sviluppato in Verba DDB per i clienti Pam e Panorama, con circa 150 punti vendita coinvolti. Il progetto si è concentrato sull'integrazione di campagne, asset visivi e materiali in-store su più touchpoint."
       },
       roles: ["ART DIRECTION", "CAMPAIGN DESIGN", "RETAIL SYSTEMS"],
       stack: [],
