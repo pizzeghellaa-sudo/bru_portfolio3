@@ -35,12 +35,12 @@ export const TRANSLATIONS = {
       },
       disciplines: ['Brand Identity', 'Visual Systems', 'Editorial Design', 'Packaging', 'Web & Digital Design', 'Print Production'],
       tooling: [
+        'AI tools for creativity, productivity and automation',
         'Adobe InDesign',
         'Adobe Photoshop',
         'Adobe Illustrator',
         'Adobe Lightroom, XD',
         'Canva',
-        'AI tools for creativity, productivity and automation'        
       ],
       quote: 'Precision, structured workflows and team coordination',
     },
@@ -115,12 +115,12 @@ export const TRANSLATIONS = {
       },
       disciplines: ['Brand Identity', 'Sistemi Visivi', 'Design Editoriale', 'Packaging', 'Web e Digitale', 'Processi di stampa'],
       tooling: [
+        'AI-assisted tools for creative workflows and automation',
         'Adobe InDesign',
         'Adobe Photoshop',
         'Adobe Illustrator',
         'Adobe Lightroom',
         'Canva',
-        'AI-assisted tools for creative workflows and automation'  
       ],
       quote: 'Precisione, flussi di lavoro strutturati e coordinamento del team',
     },
