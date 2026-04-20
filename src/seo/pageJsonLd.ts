@@ -14,8 +14,8 @@ export function buildPersonJsonLd() {
     telephone: '+393473587524',
     address: {
       '@type': 'PostalAddress',
-      postalCode: '37067',
-      addressLocality: 'Valeggio sul Mincio',
+      postalCode: '37121',
+      addressLocality: 'Verona',
       addressRegion: 'VR',
       addressCountry: 'IT',
     },
@@ -58,7 +58,7 @@ export function buildProfilePageJsonLd(lang: 'en' | 'it', url: string) {
         name: 'Bru Bulgarelli — Brand & Visual Designer Portfolio',
         url: `${SITE_URL}${url}`,
         description:
-          'Portfolio and professional profile of Bruna Bulgarelli, Brand & Visual Designer based in Valeggio sul Mincio, Verona, Italy.',
+          'Portfolio and professional profile of Bruna Bulgarelli, Brand & Visual Designer based in Verona, Italy.',
         inLanguage: lang === 'it' ? 'it' : 'en',
         dateModified: '2026-03-27',
         mainEntity: { '@id': `${SITE_URL}/#person` },

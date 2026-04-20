@@ -82,7 +82,7 @@ export default function Sidebar({ language, currentTime }: SidebarProps) {
           ))}
         </div>
         <p className="font-mono text-xs text-slate-400 uppercase tracking-widest">
-          VALEGGIO SUL MINCIO, IT <br />
+          VERONA, IT <br />
           {currentTime ? formatTime(currentTime) : ''}
         </p>
       </div>

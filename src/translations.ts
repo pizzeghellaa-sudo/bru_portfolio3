@@ -63,7 +63,7 @@ export const TRANSLATIONS = {
       },
     },
     signal: {
-      address: '37067 Valeggio sul Mincio (VR)',
+      address: 'Verona, Italy',
       phone: '+39 347 3587524',
       email: 'bulgarellibru@gmail.com',      
       availability: 'AVAILABLE FOR NEW OPPORTUNITIES',
@@ -143,7 +143,7 @@ export const TRANSLATIONS = {
       },
     },
     signal: {
-      address: '37067 Valeggio sul Mincio (VR)',
+      address: 'Verona, Italy',
       phone: '+39 347 3587524',
       email: 'bulgarellibru@gmail.com',
       availability: 'DISPONIBILE PER NUOVE OPPORTUNITÀ',

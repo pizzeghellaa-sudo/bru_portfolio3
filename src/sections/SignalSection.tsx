@@ -15,8 +15,8 @@ export default function SignalSection() {
   const langSegment = (lang ?? 'en') as 'en' | 'it';
   const pageTitle = language === 'EN' ? 'Contact — Bru Bulgarelli' : 'Contatti — Bru Bulgarelli';
   const pageDescription = language === 'EN'
-    ? 'Contact Bru Bulgarelli, Brand & Visual Designer based in Valeggio sul Mincio, Verona, Italy. Available for new branding and design projects.'
-    : 'Contatta Bru Bulgarelli, Brand & Visual Designer a Valeggio sul Mincio, Verona, Italia. Disponibile per nuovi progetti di branding e design.';
+    ? 'Contact Bru Bulgarelli, Brand & Visual Designer based in Verona, Italy. Available for new branding and design projects.'
+    : 'Contatta Bru Bulgarelli, Brand & Visual Designer a Verona, Italia. Disponibile per nuovi progetti di branding e design.';
   const jsonLd = [
     buildPersonJsonLd(),
     buildBreadcrumbJsonLd([
