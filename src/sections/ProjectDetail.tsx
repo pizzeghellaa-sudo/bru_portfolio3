@@ -301,7 +301,7 @@ export default function ProjectDetail() {
           <span className="text-primary">←</span> {t.back}
         </button>
 
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-4">
+        {project.hero ? (
           <div>
             <h2
               className="text-6xl md:text-8xl font-black tracking-tighter uppercase"
@@ -310,19 +310,48 @@ export default function ProjectDetail() {
               {project.title}
             </h2>
             <p className="font-mono text-xs text-primary mt-2 uppercase tracking-widest">
-              {meta ? meta.subtitle[language] : project.category}
+              {project.category}
             </p>
           </div>
-          {meta && (
-            <div className="font-mono text-xs text-slate-400 uppercase tracking-widest flex-shrink-0">
-              {t.detail.year} — {meta.year}
+        ) : (
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-4">
+            <div>
+              <h2
+                className="text-6xl md:text-8xl font-black tracking-tighter uppercase"
+                style={{ color: 'rgb(179, 178, 178)' }}
+              >
+                {project.title}
+              </h2>
+              <p className="font-mono text-xs text-primary mt-2 uppercase tracking-widest">
+                {meta?.subtitle[language] ?? project.subtitle?.[language] ?? project.category}
+              </p>
             </div>
-          )}
-        </div>
+            {meta && (
+              <div className="font-mono text-xs text-slate-400 uppercase tracking-widest flex-shrink-0">
+                {t.detail.year} — {meta.year}
+              </div>
+            )}
+          </div>
+        )}
       </header>
 
       {/* Separator */}
       <div className="w-full h-px bg-ink/10" />
+
+      {/* Full-width HERO for editorial projects */}
+      {project.hero && project.gallery[0] && (
+        <div
+          className="overflow-hidden bg-paper cursor-zoom-in w-full group"
+          onClick={() => handleImageClick(0)}
+        >
+          <img
+            src={project.gallery[0].full}
+            alt={resolveGalleryAlt(project.gallery[0].alt, project.title, project.category, language)}
+            className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
+            referrerPolicy="no-referrer"
+          />
+        </div>
+      )}
 
       {/* Main grid */}
       {meta ? (
@@ -378,6 +407,71 @@ export default function ProjectDetail() {
           {/* Story sections */}
           <div className="col-span-1 md:col-span-9">
             {renderSections()}
+          </div>
+        </div>
+      ) : project.hero ? (
+        /* Editorial layout — SYSTEM → CONTEXT → APPLICATION (HERO promoted to full-width above) */
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <div className="col-span-1 md:col-span-3">
+            <div className="w-12 h-0.5 bg-primary mb-8" />
+            <p className="text-sm leading-[1.75] text-ink/80 whitespace-pre-line">
+              {project.description[language]}
+            </p>
+            <div className="mt-12 flex flex-wrap gap-2">
+              {project.tags.map(tag => (
+                <span key={tag} className="px-3 py-1 border border-ink/10 font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="col-span-1 md:col-span-9 flex flex-col gap-20">
+            {/* SYSTEM — 3-up composition strip */}
+            {project.gallery[3] && (
+              <div
+                className="overflow-hidden bg-paper cursor-zoom-in group"
+                onClick={() => handleImageClick(3)}
+              >
+                <img
+                  src={project.gallery[3].full}
+                  alt={resolveGalleryAlt(project.gallery[3].alt, project.title, project.category, language)}
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            )}
+
+            {/* CONTEXT — environmental shot (book-stacks / Lake Garda) */}
+            <div
+              className="overflow-hidden bg-paper cursor-zoom-in group"
+              onClick={() => onImageClick(
+                [project.hero!],
+                [resolveGalleryAlt(undefined, project.title, project.category, language)],
+                0
+              )}
+            >
+              <img
+                src={project.hero}
+                alt={resolveGalleryAlt(undefined, project.title, project.category, language)}
+                className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+
+            {/* APPLICATION — hotel interior with artwork in situ */}
+            {project.gallery[6] && (
+              <div
+                className="overflow-hidden bg-paper cursor-zoom-in group"
+                onClick={() => handleImageClick(6)}
+              >
+                <img
+                  src={project.gallery[6].full}
+                  alt={resolveGalleryAlt(project.gallery[6].alt, project.title, project.category, language)}
+                  className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            )}
           </div>
         </div>
       ) : (

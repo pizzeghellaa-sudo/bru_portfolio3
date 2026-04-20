@@ -17,6 +17,8 @@ const VIDEO_ASSETS = Object.fromEntries(Object.entries(videoFiles).map(([p, url]
 
 export const projectThumb = (id: string) => ASSETS[`${id}/thumb.jpg`];
 
+export const projectHero = (id: string) => ASSETS[`${id}/hero.jpg`];
+
 export const projectVideo = (id: string, filename: string) => VIDEO_ASSETS[`${id}/${filename}`];
 
 export const projectGallery = (id: string): GalleryItem[] =>

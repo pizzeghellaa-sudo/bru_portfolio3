@@ -1,4 +1,4 @@
-import { projectThumb, projectGallery, projectVideo } from "./lib/projectAssets";
+import { projectThumb, projectGallery, projectVideo, projectHero } from "./lib/projectAssets";
 
 export interface Experience {
   period: string;
@@ -56,6 +56,7 @@ export interface Project {
   category: string;
   tags: string[];
   image: string; // Low-res thumbnail for the archive grid
+  hero?: string; // Editorial hero image (non-gallery primary anchor)
   video?: string; // Auto-playing video thumbnail (overrides image when set)
   description: {
     EN: string;
@@ -67,6 +68,7 @@ export interface Project {
   };
   imageAlt?: { EN: string; IT: string }; // Descriptive alt for archive grid thumbnail
   videoAlt?: { EN: string; IT: string }; // aria-label for video thumbnail
+  subtitle?: { EN: string; IT: string }; // Editorial subtitle shown under the project title
   gallery: {
     thumb: string; // Low-res for the gallery list
     full: string;  // High-res for the zoom modal
@@ -861,17 +863,22 @@ export const PROJECTS: Project[] = [
     id: "nettuno",
     slug: "hotel-nettuno",
     title: "Hotel Nettuno",
-    category: "PAINTINSG / PRINT",
+    category: "PAINTINGS / PRINT",
     tags: ["PRINT"],
     image: projectThumb("nettuno"),
+    hero: projectHero("nettuno"),
+    subtitle: {
+      EN: "Visual System — Artwork Series",
+      IT: "Sistema Visivo — Serie di Opere"
+    },
     imageAlt: {
       EN: "Hotel Nettuno Lake Garda artwork series — painting and print design by Bruna Bulgarelli",
       IT: "Serie di opere Hotel Nettuno Lago di Garda — pittura e print design di Bruna Bulgarelli"
     },
     gallery: projectGallery("nettuno"),
     description: {
-      EN: "The work consists of a series of cardboard artworks inspired by the landscape of Lake Garda, reinterpreted through a stylized and minimal vector graphic language.\n\nThe system includes three formats, square, horizontal and vertical, designed to integrate with the hotel spaces and create visual continuity with the surrounding territory.\n\nProduced on cardboard with a transparent raised varnish, the pieces combine lightness, sustainability and attention to detail.",
-      IT: "Il lavoro consiste in una serie di opere su cartone ispirate al paesaggio del Lago di Garda, reinterpretato attraverso un linguaggio grafico vettoriale stilizzato e minimale.\n\nIl sistema include tre formati, quadrato, orizzontale e verticale, progettati per integrarsi con gli spazi dell’hotel e creare una continuità visiva con il territorio circostante.\n\nProdotte su cartone con vernice trasparente a rilievo, le opere combinano leggerezza, sostenibilità e attenzione al dettaglio."
+      EN: "Hotel Nettuno required a visual language capable of translating the identity of Lake Garda into a coherent system of images.\n\nA series of vector artworks was developed, reducing natural elements to essential forms and controlled compositions.\n\nThe system spans multiple formats and orientations, allowing flexible application across spaces while maintaining visual continuity.\n\nProduced on cardboard with transparent raised varnish, the pieces combine material precision with a lightweight, atmospheric aesthetic, designed to integrate within the hotel environment.",
+      IT: "Hotel Nettuno richiedeva un linguaggio visivo capace di tradurre l’identità del Lago di Garda in un sistema coerente di immagini.\n\nÈ stata sviluppata una serie di illustrazioni vettoriali, riducendo gli elementi naturali a forme essenziali e composizioni controllate.\n\nIl sistema si articola su più formati e orientamenti, permettendo applicazioni flessibili negli spazi mantenendo continuità visiva.\n\nRealizzate su cartoncino con vernice serigrafica trasparente in rilievo, le opere uniscono precisione materica e leggerezza espressiva, pensate per integrarsi negli spazi dell’hotel."
     },
     metaDescription: {
       EN: "Artwork and print design by Bru Bulgarelli for Hotel Nettuno — a series of Lake Garda landscape artworks in stylised vector graphic language on premium cardboard.",
